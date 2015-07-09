@@ -1,0 +1,68 @@
+<script src="/151-S15/js/Chart.js"></script>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="well">
+      <div style="margin-right: auto; margin-left: auto">
+        <canvas id="grade2"></canvas>
+      </div>
+     </div>
+  </div>
+
+  <div class="col-sm-6">
+    
+<p>Create a Square class similar to the Circle and Triangle classes we have done as practice. “Satisfactory” indicates correct submissions that were on time. “Unsatisfactory” submissions were either correct and late or (more frequently) incorrect or incomplete in some way.</p>
+
+  </div>
+
+  <script>
+
+    var moreaChartData = {
+      labels: ["Satisfactory", "Unsatisfactory", "No Submission"],
+      datasets: [ { data: [13, 11, 1] } ]
+    };
+
+    var moreaChartOptions = {
+      scaleGridLineColor: "gray",
+      scaleFontColor: "darkgray",
+      scaleLineColor: "darkgray",
+      responsive: true,
+      animation: false
+    };
+
+    // Get the context of the canvas element we want to select
+    var ctx = document.getElementById("grade2").getContext("2d");
+    var myNewChart = new Chart(ctx).Bar(moreaChartData, moreaChartOptions);
+
+  </script>
+
+
+
+
+
+<!--<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+
+<div class="well" style="width: 550px">
+  <div id="assessment" style="width: 500px; height: 250px"></div>
+  Follow the Eclipse project workflow we'll be using for the rest of the semester. "Satisfactory" indicates that working Java code was submitted, but that the Eclipse project was flawed in some way.
+</div>
+
+<script>
+Morris.Bar({
+  element: 'assessment',
+  hideHover: false,
+  data: [
+        { y: 'Excellent (%)', num: 12 },
+        { y: 'Satisfactory (%)', num: 12 },
+        { y: 'Unsatisfactory (%)', num: 1 },
+        ],
+  xkey: 'y',
+  ykeys: ['num'],
+  resize: true,
+  labels: ['Students']
+});
+</script>
+-->
+</div>

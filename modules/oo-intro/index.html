@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Intro to OO & Eclipse | CSCI 151 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/151-S15/css/themes/cerulean/bootstrap.min.css">
+  <link rel="stylesheet" href="/151-S15/css/style.css">
+  <link rel="stylesheet" href="/151-S15/css/syntax.css">
+  <link rel="shortcut icon" href="/151-S15/favicon.ico" type="image/x-icon" />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/151-S15/index.html"> CSCI 151 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/151-S15/modules/">Modules</a></li> 
+        <!-- EH Added dropdown
+
+          <li class="dropdown">
+          <a href="/151-S15/modules/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modules <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            
+              <li><a href="/151-S15intro">Course Introduction</a></li>
+            
+              <li><a href="/151-S15oo-intro">Intro to OO & Eclipse</a></li>
+            
+              <li><a href="/151-S15types">Defining Classes & Types</a></li>
+            
+              <li><a href="/151-S15using-classes">Using Classes</a></li>
+            
+              <li><a href="/151-S15inheritance">Inheritance</a></li>
+            
+              <li><a href="/151-S15composition">Composing Objects</a></li>
+            
+              <li><a href="/151-S15control">Collections & Control Flow</a></li>
+            
+              <li><a href="/151-S15hangman">Putting it all together</a></li>
+            
+              <li><a href="/151-S15zuul">Intro to OO Design</a></li>
+            
+              <li><a href="/151-S15debugging">Debugging & Recursion</a></li>
+            
+              <li><a href="/151-S15poly">Polymorphism & Inheritance</a></li>
+            
+              <li><a href="/151-S15project2-module">Software Maintenance</a></li>
+            
+          </ul>
+        </li>-->
+
+        
+          <li><a href="/151-S15/outcomes/">Outcomes</a></li>
+        
+        
+          <li><a href="/151-S15/readings/">Readings</a></li>
+        
+        
+          <li><a href="/151-S15/experiences/">Experiences</a></li>
+        
+        
+          <li><a href="/151-S15/assessments/">Assessments</a></li>
+        
+        <li><a href="https://piazza.com/class/i5bijtup16w1zh">Discussion</a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container">
+  <h1><small>Module: </small> Intro to OO & Eclipse </h1>
+  <p><p>Introduction to Object Oriented Programming and running your first Java program in Eclipse.</p>
+</p>
+</div>
+
+
+<div class="section-background-1">
+  <div class="container">
+    <h2>Learning Outcomes</h2>
+
+    
+      
+      <h3>Decompose problems into actions and objects</h3>
+      <p>
+        
+      </p>
+      <p>Decompose problems into actions and objects and implement them in the Java programming language. Includes both using objects and creating new classes.</p>
+
+    
+      
+      <h3>Take advantage of automated development tools</h3>
+      <p>
+        
+      </p>
+      <p>Using Eclipse to Develop Java Programs, including:</p>
+
+<ul>
+  <li>Creating &amp; Running new Java programs</li>
+  <li>Importing &amp; Exporting existing Java programs</li>
+  <li>Automatically generating source code</li>
+  <li>Testing with JUnit</li>
+  <li>Using the automated debugger</li>
+</ul>
+
+    
+
+  </div>
+</div>
+
+
+
+
+
+<div class="section-background-2">
+  <div class="container">
+  <h2>Readings</h2>
+
+    <div class="row">
+      
+        
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <h4><a href="/151-S15/morea/01.WOD-intro/reading-eclipse-work.html">Working with Eclipse projects</a></h4>
+            <p>Importing, exporting, and avoiding common mistakes.</p>
+
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      
+      
+      
+      
+      
+        
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <h4><a href="/151-S15/morea/02.OO-intro/reading-burd.html">Using the Basic Building Blocks</a></h4>
+            <p>Burd Chapter 3</p>
+
+            <p>
+              
+              <span class="badge">20 pages</span>
+              
+            </p>
+          </div>
+        </div>
+      
+      
+      
+      
+      
+        
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <h4><a href="/151-S15/morea/materials/02-Intro-Java.pptx">Lecture Slides</a></h4>
+            <p>Intro to Java</p>
+
+            <p>
+              
+              <span class="badge">ppt</span>
+              
+            </p>
+          </div>
+        </div>
+      
+      
+      
+      
+      
+        
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <h4><a href="/151-S15/morea/02.OO-intro/board_notes.JPG">Board Notes 1/30</a></h4>
+            <p>Java Compilation Overview</p>
+
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      
+       </div><div class="row">
+      
+      
+      
+      
+      
+        
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <h4><a href="http://youtu.be/dc70DVjWnyI">Eclipse installation demo</a></h4>
+            <p>Dr. Hill’s Eclipse video demo downloading &amp; installing Eclipse, setting it up for the first time, and creating a new project.</p>
+
+            <p>
+              
+              <span class="badge">6 min</span>
+              
+              <span class="badge">optional</span>
+              
+            </p>
+          </div>
+        </div>
+      
+      
+      
+      
+      
+        
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <h4><a href="http://youtu.be/oinpGiy3BPI">Eclipse import demo</a></h4>
+            <p>Dr. Hill’s video demo importing a  project inot Eclipse.</p>
+
+            <p>
+              
+              <span class="badge">1 min</span>
+              
+              <span class="badge">optional</span>
+              
+            </p>
+          </div>
+        </div>
+      
+      
+      
+      
+      
+        
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <h4><a href="http://youtu.be/M6huFxzclGE">Eclipse export demo</a></h4>
+            <p>Dr. Hill’s video demo exporting a  project from Eclipse.</p>
+
+            <p>
+              
+              <span class="badge">1 min</span>
+              
+              <span class="badge">optional</span>
+              
+            </p>
+          </div>
+        </div>
+      
+      
+      
+      
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="section-background-1">
+  <div class="container">
+  <h2>Experiences</h2>
+
+    <div class="row">
+      
+        
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <h4><a href="/151-S15/morea/02.OO-intro/wod1.html">WOD1: Hello World</a></h4>
+            <p>WOD: Hello World Import &amp; Export</p>
+
+            <p>
+              
+              <span class="badge">due 1/30</span>
+              
+            </p>
+          </div>
+        </div>
+      
+      
+      
+      
+      
+        
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            <h4><a href="/151-S15/morea/02.OO-intro/pwod1.html">PWOD1: Hello World GUI</a></h4>
+            <p>Practice WOD: Hello World GUI App</p>
+
+            <p>
+              
+              <span class="badge">by 2/4</span>
+              
+            </p>
+          </div>
+        </div>
+      
+      
+      
+      
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="section-background-2">
+  <div class="container">
+    <h2>Assessments</h2>
+
+    
+      
+      <h3>WOD1: Eclipse Import & Export</h3>
+      <p>
+        
+      </p>
+    
+    <p>
+      <em>Outcomes assessed:</em>
+      
+      <!-- EH added ../../ -->
+      <a href="../../outcomes/#outcome-eclipse">Take advantage of automated development tools</a>
+      
+    </p>
+    
+      <script src="/151-S15/js/Chart.js"></script>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="well">
+      <div style="margin-right: auto; margin-left: auto">
+        <canvas id="grade1"></canvas>
+      </div>
+     </div>
+  </div>
+
+  <div class="col-sm-6">
+    
+<p>Follow the Eclipse project workflow we’ll be using for the rest of the semester. “Satisfactory” indicates correct submissions. “Unsatisfactory” indicates that working Java code was submitted, but that the Eclipse project was flawed in some way.</p>
+
+  </div>
+
+  <script>
+
+    var moreaChartData = {
+      labels: ["Satisfactory", "Unsatisfactory", "No Submission"],
+      datasets: [ { data: [12, 12, 1] } ]
+    };
+
+    var moreaChartOptions = {
+      scaleGridLineColor: "gray",
+      scaleFontColor: "darkgray",
+      scaleLineColor: "darkgray",
+      responsive: true,
+      animation: false
+    };
+
+    // Get the context of the canvas element we want to select
+    var ctx = document.getElementById("grade1").getContext("2d");
+    var myNewChart = new Chart(ctx).Bar(moreaChartData, moreaChartOptions);
+
+  </script>
+
+
+
+
+
+<!--<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+
+<div class="well" style="width: 550px">
+  <div id="assessment" style="width: 500px; height: 250px"></div>
+  Follow the Eclipse project workflow we'll be using for the rest of the semester. "Satisfactory" indicates that working Java code was submitted, but that the Eclipse project was flawed in some way.
+</div>
+
+<script>
+Morris.Bar({
+  element: 'assessment',
+  hideHover: false,
+  data: [
+        { y: 'Excellent (%)', num: 12 },
+        { y: 'Satisfactory (%)', num: 12 },
+        { y: 'Unsatisfactory (%)', num: 1 },
+        ],
+  xkey: 'y',
+  ykeys: ['num'],
+  resize: true,
+  labels: ['Students']
+});
+</script>
+-->
+</div>
+
+    
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="footer-background">
+<footer>
+  <div class="container page-footer">
+    
+      <p><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#101;&#104;&#105;&#108;&#108;&#049;&#064;&#100;&#114;&#101;&#119;&#046;&#101;&#100;&#117;">Emily Hill</a> | <a href="http://www.drew.edu/mcs/">Department of Mathematics and Computer Science</a> | <a href="http://www.drew.edu/">Drew University</a> <br />
+<!---emhill@drew.edu<br>--></p>
+
+    
+    <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: cerulean)<br>
+       Last update on: <span>2015-07-09 16:39:29 -0400</span></p>
+    <p style="margin: 0">
+      12 modules
+      
+        | 8 outcomes
+      
+      
+        | 54 readings
+      
+      
+        | 16 experiences
+      
+      
+        | 5 assessments
+      
+    </p>
+  </div>
+</footer>
+</div>
+</body>
+</html>

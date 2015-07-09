@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> (P)WOD10 | CSCI 151 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/151-S15/css/themes/cerulean/bootstrap.min.css">
+  <link rel="stylesheet" href="/151-S15/css/style.css">
+  <link rel="stylesheet" href="/151-S15/css/syntax.css">
+  <link rel="shortcut icon" href="/151-S15/favicon.ico" type="image/x-icon" />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/151-S15/index.html"> CSCI 151 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/151-S15/modules/">Modules</a></li> 
+        <!-- EH Added dropdown
+
+          <li class="dropdown">
+          <a href="/151-S15/modules/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modules <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            
+              <li><a href="/151-S15intro">Course Introduction</a></li>
+            
+              <li><a href="/151-S15oo-intro">Intro to OO & Eclipse</a></li>
+            
+              <li><a href="/151-S15types">Defining Classes & Types</a></li>
+            
+              <li><a href="/151-S15using-classes">Using Classes</a></li>
+            
+              <li><a href="/151-S15inheritance">Inheritance</a></li>
+            
+              <li><a href="/151-S15composition">Composing Objects</a></li>
+            
+              <li><a href="/151-S15control">Collections & Control Flow</a></li>
+            
+              <li><a href="/151-S15hangman">Putting it all together</a></li>
+            
+              <li><a href="/151-S15zuul">Intro to OO Design</a></li>
+            
+              <li><a href="/151-S15debugging">Debugging & Recursion</a></li>
+            
+              <li><a href="/151-S15poly">Polymorphism & Inheritance</a></li>
+            
+              <li><a href="/151-S15project2-module">Software Maintenance</a></li>
+            
+          </ul>
+        </li>-->
+
+        
+          <li><a href="/151-S15/outcomes/">Outcomes</a></li>
+        
+        
+          <li><a href="/151-S15/readings/">Readings</a></li>
+        
+        
+          <li><a href="/151-S15/experiences/">Experiences</a></li>
+        
+        
+          <li><a href="/151-S15/assessments/">Assessments</a></li>
+        
+        <li><a href="https://piazza.com/class/i5bijtup16w1zh">Discussion</a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="pwod10-domev4">(P)WOD10: DoMEv4</h1>
+
+<p>In this PWOD, you will begin to understand the difficulty of defining and implementing abstract classes &amp; interfaces. Starting from DoMEv1, update the application to use abstract classes &amp; interfaces to remove code duplication and make adding new types of media easier. We will be going over how to convert DoMEv1 to versions 2 &amp; 3 in class.</p>
+
+<!--<span class="h4">
+  <span style="padding: 2px" class="label label-success">Rx: <15 min</span>
+  <span style="padding: 2px" class="label label-info">Av: 15-30 min</span>
+  <span style="padding: 2px" class="label label-warning">Sd: 30-45 min</span>
+  <span style="padding: 2px" class="label label-danger">DNF: 45+ min</span>
+</span>
+-->
+
+<h2 id="instructions">Instructions</h2>
+
+<p>If you haven’t been following along in class, download the <a href="DoMEv3.zip">DoMEv3.zip</a> and import it into your workspace. In class, DoME went through the following updates:</p>
+
+<p><a href="DoMEv1.png"><img src="DoMEv1.png" width="300" /></a></p>
+
+<p><a href="DoMEv2.png"><img src="DoMEv2.png" width="300" /></a></p>
+
+<p><a href="DoMEv3.png"><img src="DoMEv3.png" width="300" /></a></p>
+
+<p>What if we wanted to add support for other types of entertainment media such as Video Games to our DoME application? What types of information should we include in our DB for each of these? Is there any information that they share? Is it possible to add support for these types without changing the Database code (other than main)? How would you go about adding support for these new media types?</p>
+
+<p>Draw a new class diagram (DoMEv4) for adding Video Games, Board Games,  Card Games, and BluRays. Update your implementation to support these new types. Be sure to test them in main.  </p>
+
+<h3 id="part-1-draw-your-diagram----submit-to-moodle-as-wod5">Part 1. Draw your diagram – SUBMIT TO MOODLE AS WOD5</h3>
+
+<p>Draw your class design diagram using a UML-styled notation like we’ve been doing in class. Class design diagrams are easiest to follow in graphical format. There are many free drawing programs you could use; I recommend <a href="http://www.gliffy.com/uml-software/">gliffy</a>. You can also draw it on paper &amp; upload a photo, or draw on top of the existing diagram (as long as it’s readable).</p>
+
+<p>Each class is represented by a box with 3 sections separated by 2 lines: the class name, its fields, and its methods. Interfaces obviously have no fields, but still need an empty field section. Concrete classes are differentiated from abstract classes and interfaces using «abstract» and «interface» notations above the class name. Note that private is indicated with minus (-), public with plus (+), and protected with pound (#). After each field, parameter, and method name is a colon (:) followed by the type or return type.  Inheritance is indicated using solid arrows, interface implementation indicated with dashed arrows. A solid line shows that the Database class uses the Item interface.</p>
+
+<h3 id="part-2-implement-your-design----practice-wod-video">Part 2. Implement your Design – Practice WOD Video</h3>
+
+<p>Make sure to test your implementation in main in the Database class by adding at least one item of each type to the DB and making sure the printed results are correct.</p>
+
+<h2 id="demonstration">Demonstration</h2>
+
+<p><em>Coming soon…</em></p>
+
+<!--Once you've finished doing the WOD a single time, watch me do it:
+
+<div class="video-container">
+  <iframe  src="http://www.youtube.com/embed/Gnc0hJ2mPs4" frameborder="0" allowfullscreen></iframe>
+</div>-->
+
+
+</div>
+
+
+
+<div class="footer-background">
+<footer>
+  <div class="container page-footer">
+    
+      <p><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#101;&#104;&#105;&#108;&#108;&#049;&#064;&#100;&#114;&#101;&#119;&#046;&#101;&#100;&#117;">Emily Hill</a> | <a href="http://www.drew.edu/mcs/">Department of Mathematics and Computer Science</a> | <a href="http://www.drew.edu/">Drew University</a> <br />
+<!---emhill@drew.edu<br>--></p>
+
+    
+    <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: cerulean)<br>
+       Last update on: <span>2015-07-09 16:39:29 -0400</span></p>
+    <p style="margin: 0">
+      12 modules
+      
+        | 8 outcomes
+      
+      
+        | 54 readings
+      
+      
+        | 16 experiences
+      
+      
+        | 5 assessments
+      
+    </p>
+  </div>
+</footer>
+</div>
+</body>
+</html>

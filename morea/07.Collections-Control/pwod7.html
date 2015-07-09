@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> PWOD7 | CSCI 151 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/151-S15/css/themes/cerulean/bootstrap.min.css">
+  <link rel="stylesheet" href="/151-S15/css/style.css">
+  <link rel="stylesheet" href="/151-S15/css/syntax.css">
+  <link rel="shortcut icon" href="/151-S15/favicon.ico" type="image/x-icon" />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/151-S15/index.html"> CSCI 151 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/151-S15/modules/">Modules</a></li> 
+        <!-- EH Added dropdown
+
+          <li class="dropdown">
+          <a href="/151-S15/modules/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modules <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            
+              <li><a href="/151-S15intro">Course Introduction</a></li>
+            
+              <li><a href="/151-S15oo-intro">Intro to OO & Eclipse</a></li>
+            
+              <li><a href="/151-S15types">Defining Classes & Types</a></li>
+            
+              <li><a href="/151-S15using-classes">Using Classes</a></li>
+            
+              <li><a href="/151-S15inheritance">Inheritance</a></li>
+            
+              <li><a href="/151-S15composition">Composing Objects</a></li>
+            
+              <li><a href="/151-S15control">Collections & Control Flow</a></li>
+            
+              <li><a href="/151-S15hangman">Putting it all together</a></li>
+            
+              <li><a href="/151-S15zuul">Intro to OO Design</a></li>
+            
+              <li><a href="/151-S15debugging">Debugging & Recursion</a></li>
+            
+              <li><a href="/151-S15poly">Polymorphism & Inheritance</a></li>
+            
+              <li><a href="/151-S15project2-module">Software Maintenance</a></li>
+            
+          </ul>
+        </li>-->
+
+        
+          <li><a href="/151-S15/outcomes/">Outcomes</a></li>
+        
+        
+          <li><a href="/151-S15/readings/">Readings</a></li>
+        
+        
+          <li><a href="/151-S15/experiences/">Experiences</a></li>
+        
+        
+          <li><a href="/151-S15/assessments/">Assessments</a></li>
+        
+        <li><a href="https://piazza.com/class/i5bijtup16w1zh">Discussion</a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="pwod7-bank-account">PWOD7: Bank Account</h1>
+
+<p>So far we’ve been working with composing shape objects with GUI Java classes. Now we’re going to practice composing objects that only output to the console.</p>
+
+<p><span class="h4">
+  <span style="padding: 2px" class="label label-success">Rx: &lt;20 min</span>
+  <span style="padding: 2px" class="label label-info">Av: 20-40 min</span>
+  <span style="padding: 2px" class="label label-warning">Sd: 40-60 min</span>
+  <span style="padding: 2px" class="label label-danger">DNF: 60+ min</span>
+</span></p>
+
+<h2 id="instructions">Instructions</h2>
+
+<ol>
+  <li><em>Start your timer</em> </li>
+  <li>Create a new Java Project called <code>BankAccount_uLogin</code></li>
+  <li>Create a new <code>BankAccount</code> class with:
+    <ul>
+      <li><strong>Fields</strong> to store: current balance, account number, customer name, customer address. <em>Think about what types these should be. For example, should the account number actually be stored as a number? What about leading 0’s?</em></li>
+      <li>A <strong>constructor</strong> that takes the customer’s name, address, and account number, and initializes the balance to 0.</li>
+      <li>Getter and setter methods for the name and address fields. <strong><em>No</em></strong> setter for the balance or account number (can you guess why?), just getters.</li>
+      <li>A <code>deposit</code> and a <code>debit</code> method. The method signatures are similar in that they have <strong>no return value</strong> and <strong>one parameter</strong>.</li>
+      <li>A <code>print</code> method that prints out the account information, including the current balance. Make sure to use proper formatting so both dollars and cents are displayed correctly. This method should take no parameters and return nothing. (<em>Hint:</em> check out Java’s <a href="http://docs.oracle.com/javase/8/docs/api/java/text/NumberFormat.html">NumberFormat</a>.<a href="http://docs.oracle.com/javase/8/docs/api/java/text/NumberFormat.html#getCurrencyInstance--">getCurrencyInstance()</a> and this <a href="http://stackoverflow.com/a/2379425">usage example</a>.) </li>
+    </ul>
+  </li>
+  <li>Test your BankAccount class by writing a <code>main</code> method that creates a new, empty <code>BankAccount</code> stored in a local variable, <code>myBankAccount</code>.
+    <ul>
+      <li>Deposit $5.00 into your <code>BankAccount</code> &amp; print the balance.</li>
+      <li>Debit $1.50 into your <code>BankAccount</code> &amp; print the balance.</li>
+    </ul>
+  </li>
+  <li>What happens if you try to deposit negative amounts or debit more than the balance? Test each of these cases in main. What do you <em>think</em> should happen?</li>
+  <li>Modify the <code>debit</code> &amp; <code>deposit</code> methods so that negative amounts have no effect. For example, myBankAccount.deposit(5) will add $5, but myBankAccount.deposit(-5) will do nothing. </li>
+  <li>Modify the <code>debit</code> method to make sure there are sufficient funds before deducting from the balance. Print an error message if there are insufficient funds.</li>
+  <li>Now let’s create a <code>Bank</code> class that can store multiple <code>BankAccount</code> objects:
+    <ul>
+      <li><strong>Fields</strong> to store: the Bank’s name and a list of accounts.</li>
+      <li>A <strong>constructor</strong> that takes the Bank’s name and initializes the list of accounts.</li>
+      <li>Get and set methods for the name, and a getter for the account list.</li>
+      <li>An <code>add</code> method that takes an account as a parameter and adds it to the list of accounts.</li>
+      <li>A <code>print</code> method that prints out the Bank’s name followed by an overview of all the accounts (i.e., by calling <code>print</code> on each account). </li>
+    </ul>
+  </li>
+  <li>Test your Bank class by writing a <code>main</code> method that creates a new <code>Bank</code>. Add 2-3 accounts to this bank and make sure they have balances &gt; 0. Display the Bank information by calling <code>print</code>.</li>
+  <li><em>Stop your timer</em></li>
+</ol>
+
+<h2 id="demonstration">Demonstration</h2>
+
+<!--*Coming soon...*-->
+
+<p>Once you’ve finished doing the WOD a single time, watch me do it:</p>
+
+<div class="video-container">
+  <iframe src="http://www.youtube.com/embed/cNWowv9ZkMs" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="my-final-project">My Final Project</h3>
+
+<p><a href="Shapes_pwod4.zip">Shapes_pwod4.zip</a></p>
+
+<h2 id="standard-wod-advice">Standard WOD Advice</h2>
+
+<p>You’ll learn significantly less from watching me solve the
+WOD if you haven’t attempted the WOD yourself first.</p>
+
+<p>While it’s an achievement to finish the WOD no matter how long it takes, you
+might experience “diminishing returns” if you work longer than the DNF
+time. Thus, it might be strategic to stop working at the DNF time and watch
+my solution.</p>
+
+<p>After watching my solution, I recommend that you repeat the WOD if you
+have not achieved at least Av performance. If so, be sure to:</p>
+
+<ul>
+  <li>Delete your old project so you cannot refer to it (remember to delete contents from disk);</li>
+  <li>Don’t look at my screencast while you WOD; and</li>
+  <li>Reset your timer.</li>
+</ul>
+
+<p>Feel free to keep trying until you make Rx if that’s of interest to you.</p>
+
+</div>
+
+
+
+<div class="footer-background">
+<footer>
+  <div class="container page-footer">
+    
+      <p><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#101;&#104;&#105;&#108;&#108;&#049;&#064;&#100;&#114;&#101;&#119;&#046;&#101;&#100;&#117;">Emily Hill</a> | <a href="http://www.drew.edu/mcs/">Department of Mathematics and Computer Science</a> | <a href="http://www.drew.edu/">Drew University</a> <br />
+<!---emhill@drew.edu<br>--></p>
+
+    
+    <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: cerulean)<br>
+       Last update on: <span>2015-07-09 16:39:29 -0400</span></p>
+    <p style="margin: 0">
+      12 modules
+      
+        | 8 outcomes
+      
+      
+        | 54 readings
+      
+      
+        | 16 experiences
+      
+      
+        | 5 assessments
+      
+    </p>
+  </div>
+</footer>
+</div>
+</body>
+</html>

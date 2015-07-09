@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> WOD3 | CSCI 151 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/151-S15/css/themes/cerulean/bootstrap.min.css">
+  <link rel="stylesheet" href="/151-S15/css/style.css">
+  <link rel="stylesheet" href="/151-S15/css/syntax.css">
+  <link rel="shortcut icon" href="/151-S15/favicon.ico" type="image/x-icon" />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/151-S15/index.html"> CSCI 151 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/151-S15/modules/">Modules</a></li> 
+        <!-- EH Added dropdown
+
+          <li class="dropdown">
+          <a href="/151-S15/modules/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modules <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            
+              <li><a href="/151-S15intro">Course Introduction</a></li>
+            
+              <li><a href="/151-S15oo-intro">Intro to OO & Eclipse</a></li>
+            
+              <li><a href="/151-S15types">Defining Classes & Types</a></li>
+            
+              <li><a href="/151-S15using-classes">Using Classes</a></li>
+            
+              <li><a href="/151-S15inheritance">Inheritance</a></li>
+            
+              <li><a href="/151-S15composition">Composing Objects</a></li>
+            
+              <li><a href="/151-S15control">Collections & Control Flow</a></li>
+            
+              <li><a href="/151-S15hangman">Putting it all together</a></li>
+            
+              <li><a href="/151-S15zuul">Intro to OO Design</a></li>
+            
+              <li><a href="/151-S15debugging">Debugging & Recursion</a></li>
+            
+              <li><a href="/151-S15poly">Polymorphism & Inheritance</a></li>
+            
+              <li><a href="/151-S15project2-module">Software Maintenance</a></li>
+            
+          </ul>
+        </li>-->
+
+        
+          <li><a href="/151-S15/outcomes/">Outcomes</a></li>
+        
+        
+          <li><a href="/151-S15/readings/">Readings</a></li>
+        
+        
+          <li><a href="/151-S15/experiences/">Experiences</a></li>
+        
+        
+          <li><a href="/151-S15/assessments/">Assessments</a></li>
+        
+        <li><a href="https://piazza.com/class/i5bijtup16w1zh">Discussion</a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="wod3-person--crowd-classes">WOD3: Person &amp; Crowd Classes</h1>
+
+<p>We’ve looked at box cars and forests, now let’s build a crowd.</p>
+
+<p><span class="h4">
+  <span style="padding: 2px" class="label label-success">Rx: &lt;20 min</span>
+  <span style="padding: 2px" class="label label-info">Av: 20-40 min</span>
+  <span style="padding: 2px" class="label label-warning">Sd: 40-60 min</span>
+  <span style="padding: 2px" class="label label-danger">DNF: 60+ min</span>
+</span></p>
+
+<!-- started @ 10 am 10:57 - -->
+
+<h2 id="instructions">Instructions</h2>
+
+<ol>
+  <li>Make a copy of your Picture project. If you haven’t been following along in class, download the <a href="Picture_starter.zip">Picture Project</a> and import it into your workspace.</li>
+  <li>Right-click your project and go to “Refactor &gt; Rename” to name it <code>Picture_uLogin</code></li>
+  <li>Right-click on your Picture project and go to “New &gt; Class” to create a <code>Person</code> class.</li>
+  <li>At minimum, your composite person shape should consiste of a <code>Circle</code> head field and a <code>Rectangle</code> body. (You may optionally create additional fields for arms, face, hat, etc.)</li>
+  <li>Create a Person constructor with 3 parameters: <code>x</code>, <code>y</code>, and <code>width</code>.</li>
+  <li>Create a Person constructor with 5 parameters: <code>x</code>, <code>y</code>, <code>width</code>, <code>headColor</code> and <code>bodyColor</code>.</li>
+  <li>Create a <code>setBounds</code> method that:
+    <ul>
+      <li>Has 3 parameters: <code>x</code>, <code>y</code>, &amp; <code>width</code></li>
+      <li>The person starts at <code>x - width / 2, y</code> and extends to <code>width</code> &amp; <code>height</code>. Note that the x position is in the <em>middle</em> of the person.</li>
+      <li>The head is the full width.</li>
+      <li>The body’s height is 2 times the width of the person &amp; the full width.</li>
+    </ul>
+  </li>
+  <li>Call your <code>setBounds</code> method from the constructor.</li>
+  <li>Create a <code>draw</code> method that takes a <code>Graphics</code> parameter and calls the draw methods of the 2 fields</li>
+  <li>Add getter &amp; setter methods for <code>headColor</code> and <code>bodyColor</code>.</li>
+  <li>Create a <code>Person</code> in your <code>Picture</code> class to test your code. When satisfied, move on to create a crowd.</li>
+  <li>Create a <code>Crowd</code> class with:
+    <ul>
+      <li>At least 3 <code>Person</code> fields or a single <code>ArrayList&lt;Person&gt;</code> field. When drawn, the people should overlap a little bit. For example, you could put two people behind the front person by reducing their size by 75% and putting them a little to the left and right of the front &amp; centered person: <br />
+ <a href="person.png"><img src="person.png" width="150" /></a> </li>
+      <li>A constructor with 3 parameters: <code>x</code>, <code>y</code>, <code>width</code>. The width represents the overall width of the crowd, <em>not</em> an individual person.</li>
+      <li>A <code>draw</code> method that has a <code>Graphics</code> parameter and calls the corresponding draw methods for the people.</li>
+    </ul>
+  </li>
+  <li>Test your new <code>Crowd</code> class by replacing your <code>Person</code> field(s) in the Picture class. </li>
+  <li>Add two more <code>Crowd</code> fields to your Picture (for a total of 3). Modify the position &amp; sizes in the Picture class so each crowd looks a little bit different.</li>
+  <li>Export your program by right-clicking on your project folder, and selecting “Export &gt; General &gt; Archive File”. Name the file “Crowd_uLogin.zip”.</li>
+  <li>Upload your file to moodle to submit.</li>
+</ol>
+
+<h2 id="person-setbounds-calculations">Person setBounds calculations</h2>
+
+<p><a href="person-math.JPG"><img src="person-math.JPG" width="400" /></a></p>
+
+</div>
+
+
+
+<div class="footer-background">
+<footer>
+  <div class="container page-footer">
+    
+      <p><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#101;&#104;&#105;&#108;&#108;&#049;&#064;&#100;&#114;&#101;&#119;&#046;&#101;&#100;&#117;">Emily Hill</a> | <a href="http://www.drew.edu/mcs/">Department of Mathematics and Computer Science</a> | <a href="http://www.drew.edu/">Drew University</a> <br />
+<!---emhill@drew.edu<br>--></p>
+
+    
+    <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: cerulean)<br>
+       Last update on: <span>2015-07-09 16:39:29 -0400</span></p>
+    <p style="margin: 0">
+      12 modules
+      
+        | 8 outcomes
+      
+      
+        | 54 readings
+      
+      
+        | 16 experiences
+      
+      
+        | 5 assessments
+      
+    </p>
+  </div>
+</footer>
+</div>
+</body>
+</html>

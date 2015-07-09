@@ -1,0 +1,9 @@
+/* Use this file to make simple customizations to your site theme. */
+
+code {
+	padding:2px 4px;
+	font-size:90%;
+	color:#2B5883;
+	background-color:#EAEAE3; /* #F0F8FF */
+	border-radius:4px
+}

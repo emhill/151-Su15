@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> PWOD3 | CSCI 151 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/151-S15/css/themes/cerulean/bootstrap.min.css">
+  <link rel="stylesheet" href="/151-S15/css/style.css">
+  <link rel="stylesheet" href="/151-S15/css/syntax.css">
+  <link rel="shortcut icon" href="/151-S15/favicon.ico" type="image/x-icon" />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/151-S15/index.html"> CSCI 151 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/151-S15/modules/">Modules</a></li> 
+        <!-- EH Added dropdown
+
+          <li class="dropdown">
+          <a href="/151-S15/modules/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modules <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            
+              <li><a href="/151-S15intro">Course Introduction</a></li>
+            
+              <li><a href="/151-S15oo-intro">Intro to OO & Eclipse</a></li>
+            
+              <li><a href="/151-S15types">Defining Classes & Types</a></li>
+            
+              <li><a href="/151-S15using-classes">Using Classes</a></li>
+            
+              <li><a href="/151-S15inheritance">Inheritance</a></li>
+            
+              <li><a href="/151-S15composition">Composing Objects</a></li>
+            
+              <li><a href="/151-S15control">Collections & Control Flow</a></li>
+            
+              <li><a href="/151-S15hangman">Putting it all together</a></li>
+            
+              <li><a href="/151-S15zuul">Intro to OO Design</a></li>
+            
+              <li><a href="/151-S15debugging">Debugging & Recursion</a></li>
+            
+              <li><a href="/151-S15poly">Polymorphism & Inheritance</a></li>
+            
+              <li><a href="/151-S15project2-module">Software Maintenance</a></li>
+            
+          </ul>
+        </li>-->
+
+        
+          <li><a href="/151-S15/outcomes/">Outcomes</a></li>
+        
+        
+          <li><a href="/151-S15/readings/">Readings</a></li>
+        
+        
+          <li><a href="/151-S15/experiences/">Experiences</a></li>
+        
+        
+          <li><a href="/151-S15/assessments/">Assessments</a></li>
+        
+        <li><a href="https://piazza.com/class/i5bijtup16w1zh">Discussion</a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="pwod3-piggybank-class">PWOD3: PiggyBank Class</h1>
+
+<p>So far we’ve been working with shapes and GUI Java classes. Can you write &amp; test a single Java class that only outputs to the console?</p>
+
+<p><span class="h4">
+  <span style="padding: 2px" class="label label-success">Rx: &lt;20 min</span>
+  <span style="padding: 2px" class="label label-info">Av: 20-40 min</span>
+  <span style="padding: 2px" class="label label-warning">Sd: 40-60 min</span>
+  <span style="padding: 2px" class="label label-danger">DNF: 60+ min</span>
+</span></p>
+
+<h2 id="instructions">Instructions</h2>
+
+<ol>
+  <li><em>Start your timer</em> </li>
+  <li>Create a new Java Project called <code>PiggyBank_uLogin</code></li>
+  <li>Right-click on your PiggyBank project and go to New &gt; Class to create a <code>PiggyBank</code> class. Go ahead and check the box for Eclipse to create a main method.</li>
+  <li>Add 4 fields to this class: <code>pennies</code>, <code>nickels</code>, <code>dimes</code>, and <code>quarters</code>. These fields will hold the <em>number</em> of each type of coin in your piggy bank.</li>
+  <li>Create a default constructor with no parameters that initializes the fields to an empty piggy bank. </li>
+  <li>Write 4 methods to insert a single coin of each type: <code>insertPenny</code>, <code>insertNickel</code>, <code>insertDime</code>, and <code>insertQuarter</code>. The method signatures are similar in that there is <strong>no return value</strong> and <strong>no parameters</strong>.</li>
+  <li>Write 4 methods to insert multiple coins of each type: <code>insertPennies</code>, <code>insertNickels</code>, <code>insertDimes</code>, and <code>insertQuarters</code>. The method signatures are similar in that there is <strong>no return value</strong> and <strong>one parameter</strong>.</li>
+  <li>Write a <code>print</code> method that prints out how many quarters, dimes, nickels, and pennies are in the piggy bank. This method should have no return value and no parameters.</li>
+  <li>In your main method, create a new, empty PiggyBank and store it in a local variable. Call <code>print</code> on this empty PiggyBank. </li>
+  <li>Run the program to verify your changes. Do you see the appropriate output for an empty piggy bank?</li>
+  <li>Now add 67 cents to your piggy bank in main and print its contents again. Do you see the correct output?</li>
+  <li>Write a method <code>getAmount</code> that returns the total amount of money in the piggy bank. The amount should be expressed as an integer that represents the total number of cents (¢) in the piggy bank.</li>
+  <li>Modify the print method to print the total by calling <code>getAmount()</code>.</li>
+  <li>Run the program to verify your changes.</li>
+  <li>Write a method <code>insertAmount</code> that takes a number of cents as a parameter and adds the appropriate number of quarters, dimes, nickels, and pennies into the piggy bank. You should use the largest coins possible to add the amount. (Hint: you may need to use %)</li>
+  <li>In main, insert 67¢ more into your PiggyBank object using the <code>insertAmount</code> method you just created. Print out the contents to verify your code is correct.</li>
+  <li>Run the program to verify your changes.</li>
+  <li>Assuming our PiggyBank class is modelling a real life piggy bank, can you guess why we don’t want to create any constructors with parameters? We also don’t want to add any get or set methods – do you know why?</li>
+  <li><em>Stop your timer</em></li>
+</ol>
+
+<h2 id="demonstration">Demonstration</h2>
+
+<p>Once you’ve finished doing the WOD a single time, watch me do it:</p>
+
+<div class="video-container">
+  <iframe src="http://www.youtube.com/embed/UsuueYD_JjY" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="my-final-project">My Final Project</h3>
+
+<p><a href="PiggyBank.zip">PiggyBank.zip</a></p>
+
+<h2 id="standard-wod-advice">Standard WOD Advice</h2>
+
+<p>You’ll learn significantly less from watching me solve the
+WOD if you haven’t attempted the WOD yourself first.</p>
+
+<p>While it’s an achievement to finish the WOD no matter how long it takes, you
+might experience “diminishing returns” if you work longer than the DNF
+time. Thus, it might be strategic to stop working at the DNF time and watch
+my solution.</p>
+
+<p>After watching my solution, I recommend that you repeat the WOD if you
+have not achieved at least Av performance. If so, be sure to:</p>
+
+<ul>
+  <li>Delete your old project so you cannot refer to it (remember to delete contents from disk);</li>
+  <li>Don’t look at my screencast while you WOD; and</li>
+  <li>Reset your timer.</li>
+</ul>
+
+<p>Feel free to keep trying until you make Rx if that’s of interest to you.</p>
+
+
+</div>
+
+
+
+<div class="footer-background">
+<footer>
+  <div class="container page-footer">
+    
+      <p><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#101;&#104;&#105;&#108;&#108;&#049;&#064;&#100;&#114;&#101;&#119;&#046;&#101;&#100;&#117;">Emily Hill</a> | <a href="http://www.drew.edu/mcs/">Department of Mathematics and Computer Science</a> | <a href="http://www.drew.edu/">Drew University</a> <br />
+<!---emhill@drew.edu<br>--></p>
+
+    
+    <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: cerulean)<br>
+       Last update on: <span>2015-07-09 16:39:29 -0400</span></p>
+    <p style="margin: 0">
+      12 modules
+      
+        | 8 outcomes
+      
+      
+        | 54 readings
+      
+      
+        | 16 experiences
+      
+      
+        | 5 assessments
+      
+    </p>
+  </div>
+</footer>
+</div>
+</body>
+</html>

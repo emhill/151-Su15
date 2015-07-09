@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Project 2 | CSCI 151 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/151-S15/css/themes/cerulean/bootstrap.min.css">
+  <link rel="stylesheet" href="/151-S15/css/style.css">
+  <link rel="stylesheet" href="/151-S15/css/syntax.css">
+  <link rel="shortcut icon" href="/151-S15/favicon.ico" type="image/x-icon" />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/151-S15/index.html"> CSCI 151 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/151-S15/modules/">Modules</a></li> 
+        <!-- EH Added dropdown
+
+          <li class="dropdown">
+          <a href="/151-S15/modules/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modules <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            
+              <li><a href="/151-S15intro">Course Introduction</a></li>
+            
+              <li><a href="/151-S15oo-intro">Intro to OO & Eclipse</a></li>
+            
+              <li><a href="/151-S15types">Defining Classes & Types</a></li>
+            
+              <li><a href="/151-S15using-classes">Using Classes</a></li>
+            
+              <li><a href="/151-S15inheritance">Inheritance</a></li>
+            
+              <li><a href="/151-S15composition">Composing Objects</a></li>
+            
+              <li><a href="/151-S15control">Collections & Control Flow</a></li>
+            
+              <li><a href="/151-S15hangman">Putting it all together</a></li>
+            
+              <li><a href="/151-S15zuul">Intro to OO Design</a></li>
+            
+              <li><a href="/151-S15debugging">Debugging & Recursion</a></li>
+            
+              <li><a href="/151-S15poly">Polymorphism & Inheritance</a></li>
+            
+              <li><a href="/151-S15project2-module">Software Maintenance</a></li>
+            
+          </ul>
+        </li>-->
+
+        
+          <li><a href="/151-S15/outcomes/">Outcomes</a></li>
+        
+        
+          <li><a href="/151-S15/readings/">Readings</a></li>
+        
+        
+          <li><a href="/151-S15/experiences/">Experiences</a></li>
+        
+        
+          <li><a href="/151-S15/assessments/">Assessments</a></li>
+        
+        <li><a href="https://piazza.com/class/i5bijtup16w1zh">Discussion</a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="project-2-improve-an-open-source-java-project">Project 2: Improve an Open Source Java Project</h1>
+
+<!--*DRAFT*-->
+
+<p>In this project, you will be updating an existing open source Java project by either fixing a bug or adding a new feature. <strong><em>By Monday 4/27</em></strong> you should have confirmed with me:</p>
+
+<ol>
+  <li>What project you are working on, and </li>
+  <li>What bug or new feature you plan on fixing</li>
+</ol>
+
+<p>You may change your mind after 4/27 with approval from me. You may work with a partner.</p>
+
+<h2 id="instructions">Instructions</h2>
+
+<ol>
+  <li>Create a <a href="https://github.com/">github</a> account (you will need to upload your source code here for full credit)</li>
+  <li>Pick a project &amp; an improvement</li>
+  <li>Plan your change (involves understanding the parts of code related to your bug or feature). I recommend using File search and the debugger to help understand the code.</li>
+  <li>Make your change</li>
+  <li>Test your change</li>
+  <li>Upload your modified code to github</li>
+  <li>Export your change as a zip file &amp; upload to moodle, along with the url to your github project.</li>
+  <li><em>Extra credit:</em> perform a pull request to add your change into the official project source code.</li>
+</ol>
+
+<!-- In future: make sure to submit proposed design first! -->
+
+<p>For more information on git, see:</p>
+
+<ul>
+  <li><a href="http://www.javaworld.com/article/2078630/open-source-tools/open-source-java-projects-github.html">JavaWorld article</a></li>
+</ul>
+
+<h3 id="directions-for-importing-drewsupermario-from-github">Directions for importing DrewSuperMario from Github</h3>
+
+<ol>
+  <li>Create a <a href="https://github.com/">github</a> account</li>
+  <li>Install <a href="http://www.sourcetreeapp.com/">SourceTree</a></li>
+  <li>Create a repo for your team by forking DrewSuperMario: <a href="https://github.com/emhill/DrewSuperMario.git">https://github.com/emhill/DrewSuperMario.git</a>. <em>(If you’re not working with a partner, you can skip this step and just clone the repo to your local machine.)</em></li>
+  <li>And then clone the repo to your local machine using SourceTree: <code>New Repo -&gt; Clone from URL</code></li>
+  <li>Import your new clone into Eclipse by navigating to the path with
+<code>File &gt; Import &gt; Existing Projects Into Workspace &gt; Select root directory &gt;</code> &amp; navigate local git path (<strong>not</strong> URL)</li>
+</ol>
+
+<p><strong>Team workflow using git:</strong></p>
+
+<ul>
+  <li>Pull latest changes in source tree</li>
+  <li>Make changes in eclipse – run to test</li>
+  <li>Stage the changed files in source tree</li>
+  <li>Commit changes with an informative commit message &amp; push to repo</li>
+</ul>
+
+<p>Once you’re ready to share your changes with the class, then issue a pull request (directions to come).</p>
+
+<h2 id="example-projects">Example projects</h2>
+
+<p>You may select any open source Java project. Below are some recommended programs that I have already imported into Eclipse.</p>
+
+<h3 id="java-mario-platformer">Java Mario Platformer</h3>
+
+<ul>
+  <li><strong>Link</strong>: <a href="https://javamarioplatformer.codeplex.com/">https://javamarioplatformer.codeplex.com/</a></li>
+  <li><strong>Eclipse Project</strong>: <a href="SuperMario.zip">SuperMario.zip</a></li>
+  <li><strong>Main to run</strong>: <code>src/devforrest.mario.code/GameFrame.java</code></li>
+  <li><strong>Requirements</strong>: Java 7</li>
+  <li><strong>Size:</strong> 2,930 LOC (lines of code)</li>
+</ul>
+
+<p><strong>Ideas to improve:</strong></p>
+
+<ul>
+  <li>Improve code design</li>
+  <li>Implement Mario dying</li>
+  <li>Support fast running? (may already do this)</li>
+  <li>Add help menu or instructions within the game</li>
+</ul>
+
+<h3 id="jajuk-advanced-jukebox">Jajuk Advanced Jukebox</h3>
+
+<ul>
+  <li><strong>Link</strong>: <a href="http://www.jajuk.info/">http://www.jajuk.info/</a></li>
+  <li><strong>Eclipse Project</strong>: <a href="jajuk.zip">jajuk.zip</a></li>
+  <li><strong>Main to run</strong>: <code>src/main/java/org.jajuk/Main.java</code></li>
+  <li><strong>Requirements</strong>: Java 6</li>
+  <li><strong>Size:</strong> 68,692 LOC (lines of code)</li>
+  <li><strong>Setup guide for developers:</strong> <a href="http://www.jajuk.info/git.html">http://www.jajuk.info/git.html</a></li>
+</ul>
+
+<!--**Ideas to improve:**
+
+  * *Coming soon*-->
+
+<!--### GanttProject
+
+  * **Link**: [http://www.ganttproject.biz/](http://www.ganttproject.biz/)
+  * **Eclipse Project**: [JFreeChart.zip](JFreeChart.zip)
+  * **Main to run**: Any demo class in `src/org.jfree.chart.demo`
+  * **Requirements**: Java 6
+  * **Size:** 96,478 LOC (lines of code)
+  * **Setup guide for developers:** [http://www.ganttproject.biz/participate](http://www.ganttproject.biz/participate)
+
+**Ideas to improve:**
+
+  * Fix a verified defect or enhancement: [https://code.google.com/p/ganttproject/issues/list?can=1](https://code.google.com/p/ganttproject/issues/list?can=1)-->
+
+<!--### FreeMind
+
+  * **Link**: [http://freemind.sourceforge.net](http://freemind.sourceforge.net)
+  * **Eclipse Project**: [JFreeChart.zip](JFreeChart.zip)
+  * **Main to run**: Any demo class in `src/org.jfree.chart.demo`
+  * **Requirements**: Java 6
+  * **Size:** 96,478 LOC (lines of code)
+  * **Setup guide for developers:** [http://freemind.sourceforge.net/wiki/index.php/Development](http://freemind.sourceforge.net/wiki/index.php/Development)
+
+**Ideas to improve:**
+
+  * Fix an open bug (not pending): [http://sourceforge.net/p/freemind/bugs/](http://sourceforge.net/p/freemind/bugs/)
+  * Implement a new enhancement: [http://freemind.sourceforge.net/wiki/index.php/Requests_for_enhancements](http://freemind.sourceforge.net/wiki/index.php/Requests_for_enhancements)-->
+
+<h3 id="jfreechart-library">JFreeChart Library</h3>
+
+<ul>
+  <li><strong>Link</strong>: <a href="http://www.jfree.org/jfreechart/">http://www.jfree.org/jfreechart/</a></li>
+  <li><strong>Eclipse Project</strong>: <a href="JFreeChart.zip">JFreeChart.zip</a></li>
+  <li><strong>Main to run</strong>: Any demo class in <code>src/org.jfree.chart.demo</code></li>
+  <li><strong>Requirements</strong>: Java 6</li>
+  <li><strong>Size:</strong> 96,478 LOC (lines of code)</li>
+  <li><strong>Setup guide for developers:</strong> <a href="http://www.jfree.org/jfreechart/developers.html">http://www.jfree.org/jfreechart/developers.html</a></li>
+</ul>
+
+<p><strong>Ideas to improve:</strong></p>
+
+<ul>
+  <li>Fix a bug: <a href="http://sourceforge.net/p/jfreechart/bugs/">http://sourceforge.net/p/jfreechart/bugs/</a></li>
+  <li>Implement a new feature: <a href="http://sourceforge.net/p/jfreechart/feature-requests/">http://sourceforge.net/p/jfreechart/feature-requests/</a></li>
+</ul>
+
+</div>
+
+
+
+<div class="footer-background">
+<footer>
+  <div class="container page-footer">
+    
+      <p><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#101;&#104;&#105;&#108;&#108;&#049;&#064;&#100;&#114;&#101;&#119;&#046;&#101;&#100;&#117;">Emily Hill</a> | <a href="http://www.drew.edu/mcs/">Department of Mathematics and Computer Science</a> | <a href="http://www.drew.edu/">Drew University</a> <br />
+<!---emhill@drew.edu<br>--></p>
+
+    
+    <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: cerulean)<br>
+       Last update on: <span>2015-07-09 16:39:29 -0400</span></p>
+    <p style="margin: 0">
+      12 modules
+      
+        | 8 outcomes
+      
+      
+        | 54 readings
+      
+      
+        | 16 experiences
+      
+      
+        | 5 assessments
+      
+    </p>
+  </div>
+</footer>
+</div>
+</body>
+</html>

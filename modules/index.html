@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Modules | CSCI 151 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/151-S15/css/themes/cerulean/bootstrap.min.css">
+  <link rel="stylesheet" href="/151-S15/css/style.css">
+  <link rel="stylesheet" href="/151-S15/css/syntax.css">
+  <link rel="shortcut icon" href="/151-S15/favicon.ico" type="image/x-icon" />
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/151-S15/index.html"> CSCI 151 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/151-S15/modules/">Modules</a></li> 
+        <!-- EH Added dropdown
+
+          <li class="dropdown">
+          <a href="/151-S15/modules/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Modules <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            
+              <li><a href="/151-S15intro">Course Introduction</a></li>
+            
+              <li><a href="/151-S15oo-intro">Intro to OO & Eclipse</a></li>
+            
+              <li><a href="/151-S15types">Defining Classes & Types</a></li>
+            
+              <li><a href="/151-S15using-classes">Using Classes</a></li>
+            
+              <li><a href="/151-S15inheritance">Inheritance</a></li>
+            
+              <li><a href="/151-S15composition">Composing Objects</a></li>
+            
+              <li><a href="/151-S15control">Collections & Control Flow</a></li>
+            
+              <li><a href="/151-S15hangman">Putting it all together</a></li>
+            
+              <li><a href="/151-S15zuul">Intro to OO Design</a></li>
+            
+              <li><a href="/151-S15debugging">Debugging & Recursion</a></li>
+            
+              <li><a href="/151-S15poly">Polymorphism & Inheritance</a></li>
+            
+              <li><a href="/151-S15project2-module">Software Maintenance</a></li>
+            
+          </ul>
+        </li>-->
+
+        
+          <li><a href="/151-S15/outcomes/">Outcomes</a></li>
+        
+        
+          <li><a href="/151-S15/readings/">Readings</a></li>
+        
+        
+          <li><a href="/151-S15/experiences/">Experiences</a></li>
+        
+        
+          <li><a href="/151-S15/assessments/">Assessments</a></li>
+        
+        <li><a href="https://piazza.com/class/i5bijtup16w1zh">Discussion</a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container">
+  <h1>Modules <small>Topics covered in this class.</small></h1>
+  <div class="row">
+     
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            
+              <a href="intro" role="button"><img src="/151-S15/morea/materials/wod.jpeg" width="100" class="img-circle img-responsive morea-img-hover" /></a>
+            
+            <div class="caption">
+              <a href="intro"><h3 style="text-align: center; margin-top: 0">1. Course Introduction</h3></a>
+              <p>Overview of the course structure and the WOD approach.</p>
+
+              <p>
+              
+              </p>
+              
+                <p class="text-center"><a href="intro" class="btn btn-primary" role="button">Learn more...</a></p>
+              
+            </div>
+          </div>
+        </div>
+       
+     
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            
+              <a href="oo-intro" role="button"><img src="/151-S15/morea/materials/eclipse.jpg" width="100" class="img-circle img-responsive morea-img-hover" /></a>
+            
+            <div class="caption">
+              <a href="oo-intro"><h3 style="text-align: center; margin-top: 0">2. Intro to OO &amp; Eclipse</h3></a>
+              <p>Introduction to Object Oriented Programming and running your first Java program in Eclipse.</p>
+
+              <p>
+              
+              </p>
+              
+                <p class="text-center"><a href="oo-intro" class="btn btn-primary" role="button">Learn more...</a></p>
+              
+            </div>
+          </div>
+        </div>
+       
+     
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            
+              <a href="types" role="button"><img src="/151-S15/morea/materials/java-logo.png" width="100" class="img-circle img-responsive morea-img-hover" /></a>
+            
+            <div class="caption">
+              <a href="types"><h3 style="text-align: center; margin-top: 0">3. Defining Classes &amp; Types</h3></a>
+              <p>Creating your first Java classes.</p>
+
+              <p>
+              
+              </p>
+              
+                <p class="text-center"><a href="types" class="btn btn-primary" role="button">Learn more...</a></p>
+              
+            </div>
+          </div>
+        </div>
+       
+     
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            
+              <a href="using-classes" role="button"><img src="/151-S15/morea/materials/keep-calm-and-object-oriented-program.png" width="100" class="img-circle img-responsive morea-img-hover" /></a>
+            
+            <div class="caption">
+              <a href="using-classes"><h3 style="text-align: center; margin-top: 0">4. Using Classes</h3></a>
+              <p>Using &amp; creating single shape classes</p>
+
+              <p>
+              
+              </p>
+              
+                <p class="text-center"><a href="using-classes" class="btn btn-primary" role="button">Learn more...</a></p>
+              
+            </div>
+          </div>
+        </div>
+       </div><div class="row">
+     
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            
+              <a href="inheritance" role="button"><img src="/151-S15/morea/materials/tree.jpg" width="100" class="img-circle img-responsive morea-img-hover" /></a>
+            
+            <div class="caption">
+              <a href="inheritance"><h3 style="text-align: center; margin-top: 0">5. Inheritance</h3></a>
+              <p>Extending existing classes</p>
+
+              <p>
+              
+              </p>
+              
+                <p class="text-center"><a href="inheritance" class="btn btn-primary" role="button">Learn more...</a></p>
+              
+            </div>
+          </div>
+        </div>
+       
+     
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            
+              <a href="composition" role="button"><img src="/151-S15/morea/materials/composing.jpg" width="100" class="img-circle img-responsive morea-img-hover" /></a>
+            
+            <div class="caption">
+              <a href="composition"><h3 style="text-align: center; margin-top: 0">6. Composing Objects</h3></a>
+              <p>Reusing existing classes</p>
+
+              <p>
+              
+              </p>
+              
+                <p class="text-center"><a href="composition" class="btn btn-primary" role="button">Learn more...</a></p>
+              
+            </div>
+          </div>
+        </div>
+       
+     
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            
+              <a href="control" role="button"><img src="/151-S15/morea/materials/programmer.jpeg" width="100" class="img-circle img-responsive morea-img-hover" /></a>
+            
+            <div class="caption">
+              <a href="control"><h3 style="text-align: center; margin-top: 0">7. Collections &amp; Control Flow</h3></a>
+              <p>Getting control of your Java programs</p>
+
+              <p>
+              
+              </p>
+              
+                <p class="text-center"><a href="control" class="btn btn-primary" role="button">Learn more...</a></p>
+              
+            </div>
+          </div>
+        </div>
+       
+     
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            
+              <a href="hangman" role="button"><img src="/151-S15/morea/materials/hangman.jpg" width="100" class="img-circle img-responsive morea-img-hover" /></a>
+            
+            <div class="caption">
+              <a href="hangman"><h3 style="text-align: center; margin-top: 0">8. Putting it all together</h3></a>
+              <p>Project 1: Hangman Game</p>
+
+              <p>
+              
+              </p>
+              
+                <p class="text-center"><a href="hangman" class="btn btn-primary" role="button">Learn more...</a></p>
+              
+            </div>
+          </div>
+        </div>
+       </div><div class="row">
+     
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            
+              <a href="zuul" role="button"><img src="/151-S15/morea/materials/duplicate.jpg" width="100" class="img-circle img-responsive morea-img-hover" /></a>
+            
+            <div class="caption">
+              <a href="zuul"><h3 style="text-align: center; margin-top: 0">9. Intro to OO Design</h3></a>
+              <p>Refactoring to localize change</p>
+
+              <p>
+              
+              </p>
+              
+                <p class="text-center"><a href="zuul" class="btn btn-primary" role="button">Learn more...</a></p>
+              
+            </div>
+          </div>
+        </div>
+       
+     
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            
+              <a href="debugging" role="button"><img src="/151-S15/morea/materials/debugger.png" width="100" class="img-circle img-responsive morea-img-hover" /></a>
+            
+            <div class="caption">
+              <a href="debugging"><h3 style="text-align: center; margin-top: 0">10. Debugging &amp; Recursion</h3></a>
+              <p>Understanding code</p>
+
+              <p>
+              
+              </p>
+              
+                <p class="text-center"><a href="debugging" class="btn btn-primary" role="button">Learn more...</a></p>
+              
+            </div>
+          </div>
+        </div>
+       
+     
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            
+              <a href="poly" role="button"><img src="/151-S15/morea/materials/finches.jpg" width="100" class="img-circle img-responsive morea-img-hover" /></a>
+            
+            <div class="caption">
+              <a href="poly"><h3 style="text-align: center; margin-top: 0">11. Polymorphism &amp; Inheritance</h3></a>
+              <p>Designing code</p>
+
+              <p>
+              
+              </p>
+              
+                <p class="text-center"><a href="poly" class="btn btn-primary" role="button">Learn more...</a></p>
+              
+            </div>
+          </div>
+        </div>
+       
+     
+        <div class="col-sm-3">
+          <div class="thumbnail">
+            
+              <a href="project2-module" role="button"><img src="/151-S15/morea/materials/github-logo.jpg" width="100" class="img-circle img-responsive morea-img-hover" /></a>
+            
+            <div class="caption">
+              <a href="project2-module"><h3 style="text-align: center; margin-top: 0">12. Software Maintenance</h3></a>
+              <p>Project 2 &amp; Final Exam</p>
+
+              <p>
+              
+              </p>
+              
+                <p class="text-center"><a href="project2-module" class="btn btn-primary" role="button">Learn more...</a></p>
+              
+            </div>
+          </div>
+        </div>
+       </div><div class="row">
+     
+  </div>
+</div>
+
+
+
+
+
+<div class="footer-background">
+<footer>
+  <div class="container page-footer">
+    
+      <p><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#101;&#104;&#105;&#108;&#108;&#049;&#064;&#100;&#114;&#101;&#119;&#046;&#101;&#100;&#117;">Emily Hill</a> | <a href="http://www.drew.edu/mcs/">Department of Mathematics and Computer Science</a> | <a href="http://www.drew.edu/">Drew University</a> <br />
+<!---emhill@drew.edu<br>--></p>
+
+    
+    <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: cerulean)<br>
+       Last update on: <span>2015-07-09 16:39:29 -0400</span></p>
+    <p style="margin: 0">
+      12 modules
+      
+        | 8 outcomes
+      
+      
+        | 54 readings
+      
+      
+        | 16 experiences
+      
+      
+        | 5 assessments
+      
+    </p>
+  </div>
+</footer>
+</div>
+</body>
+</html>
