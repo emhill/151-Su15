@@ -53,7 +53,6 @@ module Jekyll
       print_morea_problems(site)
       check_for_undefined_home_page(site)
       check_for_undefined_footer_page(site)
-      fix_morea_urls(site)
       sort_pages(site)
       puts @summary
       if site.config['morea_fatal_errors']
@@ -75,16 +74,6 @@ module Jekyll
       site.config['morea_reading_pages'] = site.config['morea_reading_pages'].sort_by {|page| page.data['morea_sort_order']}
       site.config['morea_experience_pages'] = site.config['morea_experience_pages'].sort_by {|page| page.data['morea_sort_order']}
       site.config['morea_assessment_pages'] = site.config['morea_assessment_pages'].sort_by {|page| page.data['morea_sort_order']}
-    end
-
-    # Prepend site.baseurl to reading pages containing a morea_url that does not start with http.
-    def fix_morea_urls(site)
-      site.config['morea_reading_pages'].each do |reading_page|
-        reading_url = reading_page.data['morea_url']
-        if reading_url.match(/^\/morea/)
-          reading_page.data['morea_url'] = site.baseurl + reading_url
-        end
-      end
     end
 
     # Tell each outcome all the modules that referred to it.
@@ -267,6 +256,9 @@ module Jekyll
           # When not supplied we automatically generate the relative URL to the page.
           # Note we include the baseurl so that for readings and experiences, this link is absolute.
           morea_page.data['morea_url'] ="#{site.baseurl}#{morea_page.dir}/#{morea_page.basename}.html"
+        # EH: Added elsif to fix remote morea_urls for materials
+        elsif morea_page.data['morea_url'].start_with?('/morea/')
+          morea_page.data['morea_url'] = "#{site.baseurl}" + morea_page.data['morea_url']
         end
       end
 

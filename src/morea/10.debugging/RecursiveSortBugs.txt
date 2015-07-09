@@ -1,0 +1,8 @@
+line 37: sort (not cloning, ptr copy only)
+
+getMaxIndex
+line 55: finding min, not max
+line 54: i < end should be i <= end
+
+swap
+line 65: a[dst] = src should be a[dst] = a[src]
