@@ -43,7 +43,7 @@
             
               <li><a href="/151-S15intro">Introduction to Java</a></li>
             
-              <li><a href="/151-S15oo-intro">Intro to OO & Eclipse</a></li>
+              <li><a href="/151-S15oo-intro">Intro to OO</a></li>
             
               <li><a href="/151-S15types">Defining Classes & Types</a></li>
             
@@ -88,9 +88,9 @@
 
 
 <div class="container">
-  <h1 id="phw2-square-class-with-outline">PHW2: Square Class with Outline</h1>
+  <h1 id="phw3-square-class-with-outline">PHW3: Square Class with Outline</h1>
 
-<p>So far we have created a Circle and Triangle class. Next we’ll create a Square class.</p>
+<p>So far we have created a Circle and Square class. Next we’ll update your Square class by adding support for an outline color.</p>
 
 <p><span class="h4">
   <span style="padding: 2px" class="label label-success">Rx: &lt;10 min</span>
@@ -103,57 +103,55 @@
 
 <!--1. *Start your timer* -->
 <ol>
-  <li>If you haven’t been following along in class, download the <a href="Shapes_pwod2.zip">Shapes Project</a> and import it into your workspace.</li>
-  <li>Right-click on your Shapes project and go to New &gt; Class to create a <code>Square</code> class. Go ahead and check the box for Eclipse to create a main method.</li>
-  <li>Add 5 fields to this class: <code>x</code>, <code>y</code>, <code>width</code>, <code>fillColor</code>, and <code>outlineColor</code>. Integers recommended.</li>
-  <li>Add 3 constructors:
+  <li>If you haven’t been following along, download the <a href="Shapes_phw3.zip">Shapes Project</a> and import it into your workspace.</li>
+  <li>Add a new field, <code>outlineColor</code>, to the Square class.</li>
+  <li>Update the constructors to support the outline. You should have 3 constructors:
     <ul>
       <li>Default constructor (no parameters)</li>
       <li>Constructor with 4 parameters (no <code>outlineColor</code>)</li>
       <li>Constructor with 5 parameters (one for each field)</li>
     </ul>
   </li>
-  <li>Add get &amp; set methods for all the fields</li>
-  <li>Add a <code>getArea()</code> and a <code>getPerimeter()</code> method &amp; test them in main by creating a Square variable &amp; initializing it by calling one of the constructors.</li>
-  <li>Add a draw method that draws the square. </li>
-  <li>Add a Square field to your Picture class to test it.</li>
-  <li>Run the program to verify your changes.
-<!--1. *Stop your timer*--></li>
-  <li>Export your program by right-clicking on your project folder, and selecting “Export &gt; General &gt; Archive File”. Name the file “Square_uLogin.zip”.</li>
+  <li>Add get &amp; set methods for the outline color</li>
+  <li>Update the draw method to draw the outline. </li>
+  <li>Test your Square changes in Picture.</li>
+  <li>Run the program to verify your changes.</li>
 </ol>
 
 <!-- started @ 10 am -->
 
-<!--## Demonstration
+<h2 id="demonstration">Demonstration</h2>
 
- Once you've finished doing the WOD a single time, watch me do it:
+<p>Once you’ve finished doing the WOD a single time, watch me do it:</p>
 
 <div class="video-container">
-  <iframe  src="http://www.youtube.com/embed/dnU6XB0O8Nk" frameborder="0" allowfullscreen></iframe>
+  <iframe src="http://www.youtube.com/embed/dnU6XB0O8Nk" frameborder="0" allowfullscreen=""></iframe>
 </div>
 
-## Standard Practice HW Advice
+<h2 id="standard-practice-hw-advice">Standard Practice HW Advice</h2>
 
-You’ll learn significantly less from watching me solve the
-practice HW if you haven’t attempted the HW yourself first.
+<p>You’ll learn significantly less from watching me solve the
+practice HW if you haven’t attempted the HW yourself first.</p>
 
-While it's an achievement to finish the HW no matter how long it takes, you
-might experience "diminishing returns" if you work longer than the DNF
+<p>While it’s an achievement to finish the HW no matter how long it takes, you
+might experience “diminishing returns” if you work longer than the DNF
 time. Thus, it might be strategic to stop working at the DNF time and watch
-my solution.
+my solution.</p>
 
-After watching my solution, I recommend that you repeat the HW if you
-have not achieved at least Av performance. If so, be sure to:
+<p>After watching my solution, I recommend that you repeat the HW if you
+have not achieved at least Av performance. If so, be sure to:</p>
 
-  * Delete your old project so you cannot refer to it (remember to delete contents from disk);
-  * Don’t look at my screencast while you complete your HW; and
-  * Reset your timer.
+<ul>
+  <li>Delete your old project so you cannot refer to it (remember to delete contents from disk);</li>
+  <li>Don’t look at my screencast while you complete your HW; and</li>
+  <li>Reset your timer.</li>
+</ul>
 
-Feel free to keep trying until you make Rx if that’s of interest to you.
+<p>Feel free to keep trying until you make Rx if that’s of interest to you.</p>
 
-### My Final Project
+<h3 id="my-final-project">My Final Project</h3>
 
-[Shapes_pwod2.zip](Shapes_pwod2.zip)-->
+<p><a href="Shapes_pwod2.zip">Shapes_pwod2.zip</a></p>
 
 </div>
 
@@ -168,14 +166,14 @@ Feel free to keep trying until you make Rx if that’s of interest to you.
 
     
     <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: cerulean)<br>
-       Last update on: <span>2015-07-13 16:40:38 -0400</span></p>
+       Last update on: <span>2015-07-13 17:16:34 -0400</span></p>
     <p style="margin: 0">
       12 modules
       
         | 8 outcomes
       
       
-        | 50 readings
+        | 43 readings
       
       
         | 16 experiences
