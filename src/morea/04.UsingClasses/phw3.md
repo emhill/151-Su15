@@ -29,19 +29,14 @@ So far we have created a Circle and Square class. Next we'll update your Square 
 4. Test your Square changes in Picture.
 2. Run the program to verify your changes.
 
-
-
-
-<!-- started @ 10 am -->
-
 ## Demonstration
 
  Once you've finished doing the WOD a single time, watch me do it:
 
-{% include youtube.html id="dnU6XB0O8Nk" %}
+{% include youtube.html id="Oga1vXsLqfk" %}
 
 {% include wod-warning.html %}
 
-### My Final Project
-
-[Shapes_pwod2.zip](Shapes_pwod2.zip)
+<!--### My Final Project
+Ommitted for demo purposes
+[Shapes_pwod2.zip](Shapes_pwod2.zip)-->
