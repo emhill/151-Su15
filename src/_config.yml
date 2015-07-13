@@ -1,6 +1,6 @@
 name: CSCI 151
 highlighter: pygments
 safe: false
-baseurl: /151-S15
+baseurl: /151-Su15
 exclude: [morea]
 morea_theme: cerulean
