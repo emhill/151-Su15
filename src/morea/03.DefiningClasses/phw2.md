@@ -20,7 +20,7 @@ So far we have created a Circle class. Next we'll create a Square class.
 <!--1. *Start your timer* -->
 1. If you haven't been following along in class, download the [Shapes Project](Shapes_phw2.zip) and import it into your workspace.
 2. Right-click on your Shapes project and go to New > Class to create a `Square` class. Go ahead and check the box for Eclipse to create a main method.
-1. Add 5 fields to this class: `x`, `y`, `width`, and `color`. Integers recommended.
+1. Add 4 fields to this class: `x`, `y`, `width`, and `color`. Integers recommended.
 2. Add 2 constructors:
     * Default constructor (no parameters)
     * Constructor with 4 parameters (one for each field)
@@ -33,17 +33,14 @@ So far we have created a Circle class. Next we'll create a Square class.
 3. Export your program by right-clicking on your project folder, and selecting “Export > General > Archive File”. Name the file “Square_uLogin.zip”.
 
 
+## Demonstration
 
-<!-- started @ 10 am -->
+ Once you've finished doing the HW a single time, watch me do it:
 
-<!--## Demonstration
-
- Once you've finished doing the WOD a single time, watch me do it:
-
-{% include youtube.html id="dnU6XB0O8Nk" %}
+{% include youtube.html id="IgqOMPyyH98" %}
 
 {% include wod-warning.html %}
 
 ### My Final Project
 
-[Shapes_pwod2.zip](Shapes_pwod2.zip)-->
+[Shapes_phw3.zip](Shapes_phw3.zip)

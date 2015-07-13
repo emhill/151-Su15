@@ -1,5 +1,5 @@
 ---
-title: "Intro to OO & Eclipse"
+title: "Intro to OO"
 published: true
 morea_coming_soon: false
 morea_id: oo-intro
@@ -7,8 +7,6 @@ morea_type: module
 morea_readings:
  - reading-eclipse-work
  - reading-burd3
- - reading-slides2
- - reading-board2
  - reading-eclipse-demo
  - reading-eclipse-import
  - reading-eclipse-export
@@ -22,4 +20,4 @@ morea_icon_url: /morea/materials/car.jpg
 morea_sort_order: 2
 ---
 
-Introduction to Object Oriented Programming and running your first Java program in Eclipse.
+Introduction to Object Oriented Programming.

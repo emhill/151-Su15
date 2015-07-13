@@ -4,7 +4,7 @@ morea_id: home
 morea_type: home
 ---
 
-## CSCI 151 Spring 2015
+## CSCI 151 Summer 2015
 
 ### Welcome to Object Oriented Programming in Java 
 **Essential Question:** How do we design, write, and test large computer programs?
@@ -23,10 +23,10 @@ To explore and implement the topics we will be discussing in class, you will nee
 
 #### Integrated Development Environment
 You will need to work on programming assignments outside of class time. In this course, we will be using [Eclipse IDE for Java Developers](http://www.eclipse.org/downloads/), which is freely available for Windows, Mac, and Linux.-->
-### Syllabus
+<!--### Syllabus
 [Overview of course policies]({{site.baseurl}}/morea/materials/Syllabus.pdf)
 **Office Hours:**
   * Tuesday 12:30-1:30
   * Wednesday 12:30-1:30
   * Thursday 2:00-3:00### Course Schedule
-Tentative [course calendar](https://www.dropbox.com/s/1mmxb1i9e5x3pah/calendar.xlsx?dl=0), updated weekly.
+Tentative [course calendar](https://www.dropbox.com/s/1mmxb1i9e5x3pah/calendar.xlsx?dl=0), updated weekly.-->
