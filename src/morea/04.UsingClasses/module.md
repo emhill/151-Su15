@@ -7,8 +7,6 @@ morea_type: module
 morea_readings:
  - reading-burd7
  - reading-burd9
- - reading-slides4
- - reading-slides5
  - eclipse-tips2
 morea_outcomes:
  - outcome-java

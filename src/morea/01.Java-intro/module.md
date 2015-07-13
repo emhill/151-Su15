@@ -9,7 +9,6 @@ morea_readings:
  - reading-how-to-watch-screencasts-the-smart-way
  - reading-burd1
  - reading-oo
- - reading-slides
 morea_experiences:
  - hw-eclipse
  - hw-java
