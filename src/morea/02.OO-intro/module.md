@@ -16,11 +16,9 @@ morea_outcomes:
  - outcome-java
  - outcome-eclipse
 morea_experiences:
- - wod1
- - pwod1
+ - phw1
 morea_assessments:
- - grade1
-morea_icon_url: /morea/materials/eclipse.jpg
+morea_icon_url: /morea/materials/car.jpg
 morea_sort_order: 2
 ---
 

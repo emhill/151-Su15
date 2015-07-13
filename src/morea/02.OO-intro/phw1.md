@@ -1,21 +1,21 @@
 ---
-title: "PWOD1: Hello World GUI"
+title: "PHW1: Hello World GUI"
 published: true
-morea_id: pwod1
+morea_id: phw1
 morea_type: experience
 morea_sort_order: 2
 morea_summary: "Practice WOD: Hello World GUI App"
 morea_labels:
- - by 2/4
 ---
 
-# PWOD1: Hello World GUI
+# PHW1: Hello World GUI
 
 Now that you've run your first Java program, let's run your first **GUI** Java program.
 
+{% include wod-times.html Rx="<5 min" Av="5-10 min" Sd="10-15 min" DNF="15+ min" %}
+
 ## Instructions
 
-1. *Start your timer*
 1. Download [HelloWorldGUI.zip](HelloWorldGUI.zip)
 1. Open Eclipse and go to `File > Import > General > Existing Projects into Workspace`
 1. Select archive file, hit “Browse”, and select the `HelloWorldGUI.zip` you just downloaded
@@ -29,13 +29,11 @@ Now that you've run your first Java program, let's run your first **GUI** Java p
 2. Replace “Hello World” with **your name** and update both circles so your name is centered within them.
 2. Run the program to verify your changes.
 3. Export your program by right-clicking on your project folder, and selecting `Export > General > Archive File`. Name the file `HelloWorldGUI_uLogin.zip`.
-1. *Stop your timer*
 
-{% include wod-times.html Rx="<5 min" Av="5-10 min" Sd="10-15 min" DNF="15+ min" %}
 
 ## Demonstration
 
-Once you've finished doing the WOD a single time, watch me do it:
+Once you've finished doing the HW a single time, watch me do it:
 
 {% include youtube.html id="AmSUYvF3Ry4" %}
 

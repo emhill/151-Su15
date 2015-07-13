@@ -1,17 +1,18 @@
 ---
-title: "WOD1: Hello World"
+title: "Practice: Hello World"
 published: true
 morea_id: wod1
 morea_type: experience
 morea_sort_order: 2
 morea_summary: "WOD: Hello World Import & Export"
 morea_labels:
- - due 1/30
 ---
 
-# WOD1: Hello World Import & Export
+# Practice: Hello World Import & Export
 
 After installing eclipse & setting up your workspace, import your first project, change it, and export it.
+
+{% include wod-times.html Rx="<3 min" Av="3-5 min" Sd="5-10 min" DNF="10+ min" %}
 
 ## Instructions
 
@@ -29,14 +30,14 @@ After installing eclipse & setting up your workspace, import your first project,
 2. Run the program to verify your changes.
 3. Export your program by right-clicking on your project folder, and selecting “Export > General > Archive File”. Name the file “HelloWorld_uLogin.zip”.
 4. Submit your zip file to moodle.
-5. Note stop time.
+
 <!--1. *Stop your timer*-->
 
-{% include wod-times.html Rx="<3 min" Av="3-5 min" Sd="5-10 min" DNF="10+ min" %}
+
 
 <!--## Demonstration
 
-Once you've finished doing the WOD a single time, watch me do it:
+Once you've finished doing the HW a single time, watch me do it:
 
 {% include youtube.html id="lbh5q9Lj-As" %}
 

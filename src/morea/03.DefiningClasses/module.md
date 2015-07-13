@@ -14,7 +14,7 @@ morea_outcomes:
  - outcome-java
  - outcome-eclipse
 morea_experiences:
- - pwod1
+ - phw2
 morea_icon_url: /morea/materials/java-logo.png
 morea_sort_order: 3
 ---

@@ -1,13 +1,11 @@
 ---
-title: "Course Introduction"
+title: "Introduction to Java"
 published: true
 morea_id: intro
 morea_outcomes:
  - outcome1
  - outcome-eclipse
 morea_readings:
- - reading-athletic-software-engineering
- - reading-wod-weekly-rhythm
  - reading-how-to-watch-screencasts-the-smart-way
  - reading-burd1
  - reading-oo
@@ -17,8 +15,8 @@ morea_experiences:
  - hw-java
  - hw-java-install
 morea_type: module
-morea_icon_url: /morea/materials/wod.jpeg
+morea_icon_url: /morea/materials/eclipse.jpg
 morea_sort_order: 1
 ---
 
-Overview of the course structure and the WOD approach.
+Getting setup with Eclipse & Java.

@@ -1,17 +1,19 @@
 ---
-title: "WOD2: Square"
+title: "PHW3"
 published: true
-morea_id: wod2
+morea_id: phw3
 morea_type: experience
 morea_sort_order: 2
-morea_summary: "WOD: Square Class"
+morea_summary: "Square Class with Outline"
 morea_labels:
- - 2/13
+
 ---
 
-# WOD2: Square Class
+# PHW2: Square Class with Outline
 
 So far we have created a Circle and Triangle class. Next we'll create a Square class.
+
+{% include wod-times.html Rx="<10 min" Av="10-20 min" Sd="20-30 min" DNF="30+ min" %}
 
 ## Instructions
 
@@ -31,7 +33,7 @@ So far we have created a Circle and Triangle class. Next we'll create a Square c
 <!--1. *Stop your timer*-->
 3. Export your program by right-clicking on your project folder, and selecting “Export > General > Archive File”. Name the file “Square_uLogin.zip”.
 
-{% include wod-times.html Rx="<10 min" Av="10-20 min" Sd="20-30 min" DNF="30+ min" %}
+
 
 <!-- started @ 10 am -->
 
