@@ -1,5 +1,5 @@
 ---
-title: "PHW7"
+title: "PHW4-5"
 published: true
 morea_id: pwod7
 morea_type: experience
@@ -9,7 +9,7 @@ morea_labels:
 
 ---
 
-# PHW7: Bank Account
+# PHW4-5: Bank Account & Bank
 
 So far we've been working with composing shape objects with GUI Java classes. Now we're going to practice composing objects that only output to the console.
 
