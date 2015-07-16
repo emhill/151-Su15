@@ -40,16 +40,11 @@ So far we've been working with composing shape objects with GUI Java classes. No
 1. Test your Bank class by writing a `main` method that creates a new `Bank`. Add 2-3 accounts to this bank and make sure they have balances > 0. Display the Bank information by calling `print`.
 
 
-<!--## Demonstration
+## Demonstration
 
 
 Once you've finished doing the WOD a single time, watch me do it:
 
 {% include youtube.html id="cNWowv9ZkMs" %}
 
-### My Final Project
-
-[Shapes_pwod4.zip](Shapes_pwod4.zip)
-
 {% include wod-warning.html %}
--->
