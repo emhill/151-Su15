@@ -1,15 +1,15 @@
 ---
-title: "PWOD7"
+title: "PHW7"
 published: true
 morea_id: pwod7
 morea_type: experience
 morea_sort_order: 7
 morea_summary: "Bank Account"
 morea_labels:
- - by 2/27
+
 ---
 
-# PWOD7: Bank Account
+# PHW7: Bank Account
 
 So far we've been working with composing shape objects with GUI Java classes. Now we're going to practice composing objects that only output to the console.
 
@@ -40,9 +40,8 @@ So far we've been working with composing shape objects with GUI Java classes. No
 1. Test your Bank class by writing a `main` method that creates a new `Bank`. Add 2-3 accounts to this bank and make sure they have balances > 0. Display the Bank information by calling `print`.
 1. *Stop your timer*
 
-## Demonstration
+<!--## Demonstration
 
-<!--*Coming soon...*-->
 
 Once you've finished doing the WOD a single time, watch me do it:
 
@@ -53,3 +52,4 @@ Once you've finished doing the WOD a single time, watch me do it:
 [Shapes_pwod4.zip](Shapes_pwod4.zip)
 
 {% include wod-warning.html %}
+-->
