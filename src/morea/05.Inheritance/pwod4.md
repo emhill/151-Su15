@@ -1,15 +1,15 @@
 ---
-title: "PWOD4"
+title: "PHW6"
 published: true
 morea_id: pwod4
 morea_type: experience
 morea_sort_order: 4
 morea_summary: "Rectangle"
 morea_labels:
- - by 2/23
+
 ---
 
-# PWOD4: Rectangle
+# PHW6: Rectangle
 
 In class we saw how to use inheritance to reuse code between our Ellipse and Circle classes. Now it's your turn.
 
@@ -17,7 +17,6 @@ In class we saw how to use inheritance to reuse code between our Ellipse and Cir
 
 ## Instructions
 
-1. *Start your timer* 
 1. If you haven't been following along in class, download the [Shapes Project](Shapes_2_20.zip) and import it into your workspace.
 2. Use inheritance to add a Rectangle class to your Shapes project. First, think about how Square and Rectangle are related. Should Rectangle extend Square, or vice versa? We went over both ways in class.
 3. Determine what fields are needed in the Square & Rectangle classes. Overlapping fields should only be in *one* class.
@@ -29,11 +28,10 @@ In class we saw how to use inheritance to reuse code between our Ellipse and Cir
 4. Make sure the `getArea()` and `getPerimeter()` methods work for both classes, and test in main by creating at least one Rectangle and one Square object.
 4. Make sure the `draw()` method works for both classes and test it by adding a Rectangle and Square to your Picture class.
 2. Run the program to verify your changes.
-1. *Stop your timer*
 
-## Demonstration
 
-<!--*Coming soon...*-->
+<!--## Demonstration
+
 
 Once you've finished doing the WOD a single time, watch me do it.
 
@@ -49,4 +47,4 @@ Rectangle as a super class to Square:
 
 [Shapes_pwod4.zip](Shapes_pwod4.zip)
 
-{% include wod-warning.html %}
+{% include wod-warning.html %}-->

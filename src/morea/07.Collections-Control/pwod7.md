@@ -17,7 +17,7 @@ So far we've been working with composing shape objects with GUI Java classes. No
 
 ## Instructions
 
-1. *Start your timer* 
+
 1. Create a new Java Project called `BankAccount_uLogin`
 1. Create a new `BankAccount` class with:
     * **Fields** to store: current balance, account number, customer name, customer address. *Think about what types these should be. For example, should the account number actually be stored as a number? What about leading 0’s?*
@@ -38,7 +38,7 @@ So far we've been working with composing shape objects with GUI Java classes. No
     * An `add` method that takes an account as a parameter and adds it to the list of accounts.
     * A `print` method that prints out the Bank's name followed by an overview of all the accounts (i.e., by calling `print` on each account). 
 1. Test your Bank class by writing a `main` method that creates a new `Bank`. Add 2-3 accounts to this bank and make sure they have balances > 0. Display the Bank information by calling `print`.
-1. *Stop your timer*
+
 
 <!--## Demonstration
 
