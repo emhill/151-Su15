@@ -1,5 +1,5 @@
 ---
-title: "PHW7"
+title: "PHW8"
 published: true
 morea_id: pwod6
 morea_type: experience
@@ -9,7 +9,7 @@ morea_labels:
 
 ---
 
-# PHW7: Forest
+# PHW8: Forest
 
 In class we saw how to compose objects to create a BoxCar class, and in [PHW6]({{ site.baseurl }}/morea/06.Composition/pwod5.html) you created a Tree class. Now we're going to create another composite shape: Forest.
 
