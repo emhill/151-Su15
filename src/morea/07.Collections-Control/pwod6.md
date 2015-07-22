@@ -22,7 +22,7 @@ In class we saw how to compose objects to create a BoxCar class, and in [PHW6]({
     * Fields: at least 3 Trees (using a Collection such as ArrayList recommended). When drawn, the trees should overlap a little bit. For example: <BR>
     <a href="forest.png"><img src="forest.png" width="100"/></a>
     * A constructor with 4 parameters: `x`, `y`, `width`, & `height`. The width & height represent the overall width & height of the forest, *not* an individual tree.
-    * A `draw` method that has a `Graphics` parameter and calls the corresponding draw methods for the trees.
+    * A `paint` method that has a `Graphics` parameter and calls the corresponding draw methods for the trees.
 1. Test your new `Forest` class by replacing your `Tree` field(s) in the Picture class. 
 1. Modify the position & sizes in the Picture class to change the look of your forest(s). Look at how easy it is to aggregate (i.e., reuse) components!
 

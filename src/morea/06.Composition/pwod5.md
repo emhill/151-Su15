@@ -30,7 +30,7 @@ In class we saw how to compose objects to create a BoxCar class. Now we're going
         * The tree starts at `x, y` and extends to `width` & `height`
         * The top is 3/4 height of the tree & the full width
         * The trunk is 1/4 height of the tree & 1/5 the width
-     * a `draw` method that takes a `Graphics` parameter and calls the draw methods of the 2 fields
+     * a `paint` method that takes a `Graphics` parameter and calls the draw methods of the 2 fields
 1. Test your new Tree class by adding 3 to the Picture class. Make sure to use different constructors, and change the size of the Tree using `setBounds` to verify that it works correctly for any size tree.
 
 <!--
