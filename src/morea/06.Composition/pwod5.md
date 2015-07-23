@@ -24,7 +24,7 @@ In class we saw how to compose objects to create a BoxCar class. Now we're going
         * Default constructor (no parameters)
         * Constructor with 4 parameters: `x`, `y`, `width`, & `height`
         * Constructor with 6 parameters: `x`, `y`, `width`, `height`, `topColor`, `trunkColor`
-    * getters & setters for `topColor` & `trunkColor`
+    * a setter for `topColor` & `trunkColor`
     * a `setBounds` method that:
         * Has 4 parameters: `x`, `y`, `width`, & `height`
         * The tree starts at `x, y` and extends to `width` & `height`
