@@ -1,15 +1,15 @@
 ---
-title: "Project 1"
+title: "Project"
 published: true
 morea_id: project1
 morea_type: experience
 morea_sort_order: 7
 morea_summary: "Hangman"
 morea_labels:
- - due 3/27
+
 ---
 
-# Project 1: Hangman Game
+# Project: Hangman Game
 
 **Parts A & B: due 3/23**<BR>
 **Parts C & D: due 3/27**
