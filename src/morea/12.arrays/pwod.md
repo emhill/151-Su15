@@ -31,7 +31,7 @@ In this PHW, you will practice working with two-dimensional arrays.
         int value = 10;
         System.out.format(format, value);
 
-  * *Optional:* Want all your numbers to line up relative to the length of the largest value?
+  * *Optional:* Want all your numbers to line up relative to the length of the largest value? Figure out the length of your longest number:
 
         String.valueOf(biggest).length();
 
