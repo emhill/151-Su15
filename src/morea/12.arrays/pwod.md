@@ -27,13 +27,13 @@ In this PHW, you will practice working with two-dimensional arrays.
   * Test your methods in main.
   * *Optional:* Want all your numbers to line up in nice columns?
 
-      String format = "%10d";
-      int value = 10;
-      System.out.format(format, value);
+        String format = "%10d";
+        int value = 10;
+        System.out.format(format, value);
 
   * *Optional:* Want all your numbers to line up relative to the length of the largest value?
 
-      String.valueOf(biggest).length();
+        String.valueOf(biggest).length();
 
 ## Demonstration
 
