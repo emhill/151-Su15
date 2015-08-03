@@ -9,7 +9,7 @@ morea_labels:
 
 ---
 
-# PHW12: Arrays
+# PHW12: MultiplicationTable
 
 In this PHW, you will practice working with two-dimensional arrays.
 
@@ -17,6 +17,13 @@ In this PHW, you will practice working with two-dimensional arrays.
 
 ## Instructions
 
+  * Create a class `MultiplicationTable` with 2 fields: a two-dimensional integer array & a scaling factor
+  * Create a constructor that takes 3 parameters: width, height, & scaling factor
+    * Initialize `array[0][0] = scaling factor`
+    * Initialize `array[w][h] = scaling factor * width * height`
+  * Create a `print` method to print out the table
+  * Create a `lookup` method that takes two indexes (of the ranges 1 to width and 1 to height) and returns the appropriate value (0 otherwise)
+  * Test your methods in main
 
 ## Demonstration
 

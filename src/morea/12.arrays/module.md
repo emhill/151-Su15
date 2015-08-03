@@ -2,7 +2,7 @@
 title: "Arrays"
 published: true
 morea_coming_soon: false
-morea_id: poly
+morea_id: array
 morea_type: module
 morea_readings:
 morea_outcomes:
