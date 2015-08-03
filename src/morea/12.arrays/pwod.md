@@ -28,7 +28,7 @@ In this PHW, you will practice working with two-dimensional arrays.
   * *Optional:* Want all your numbers to line up in nice columns?
 
         String format = "%10d";
-        int value = 10;
+        int value = 1250;
         System.out.format(format, value);
 
   * *Optional:* Want all your numbers to line up relative to the length of the largest value? Figure out the length of your longest number:
