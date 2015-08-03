@@ -23,7 +23,7 @@ In this PHW, you will practice working with two-dimensional arrays.
     * Initialize `array[w-1][h-1] = scaling factor * width * height`
     * Initialize all the remaining values in between as appropriate
   * Create a `print` method to print out the table
-  * Create a `lookup` method that takes two indexes (of the ranges 1 to width and 1 to height) and returns the appropriate value (0 otherwise)
+  * Create a `lookup` method that takes two indexes (of the ranges 1 to width and 1 to height) and returns the appropriate value (or 0 otherwise)
   * Test your methods in main.
   * *Optional:* Want all your numbers to line up in nice columns?
 
