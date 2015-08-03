@@ -27,7 +27,7 @@ In this PHW, you will practice working with two-dimensional arrays.
   * Test your methods in main.
   * *Optional:* Want all your numbers to line up in nice columns?
 
-        String format = "%10d";
+        String format = "%10d"; // padd number to take 10 spaces total
         int value = 1250;
         System.out.format(format, value);
 
