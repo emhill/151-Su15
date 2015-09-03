@@ -15,9 +15,9 @@ In this PHW, you will practice working with two-dimensional arrays in main and a
 
 <!--{% include wod-times.html Rx="<15 min" Av="15-30 min" Sd="30-45 min" DNF="45+ min" %}-->
 
-## Part 1: Understanding the Problem through `main`
+## Part 1: Understanding the problem through `main`
 
-We will be creating a 2-dimensional array that will take a width, height, & scaling factor and
+We will be creating a 2-dimensional array that will take a width, height, & scaling factor and create a multiplication table based on the scaling factor:
 
 <img src="fig1.png" width="300"> <img src="fig2.png" width="300">
 
