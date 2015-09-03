@@ -1,0 +1,54 @@
+
+
+\documentclass[11pt,twocolumn]{article}
+\usepackage{blkarray}
+%\usepackage{amsmath}
+\newcommand{\code}[1]{\textsf{#1}}
+
+\begin{document}
+
+\begin{figure}
+\centering
+$\begin{blockarray}{cccccc}
+  & 1 & 2 & 3 & 4 & 5 \\ 
+\begin{block}{c[ccccc]}
+1 & 1 & 2 & 3 & 4 & 5 \\ 
+2 & 2 & 4 & 6 & 8 & 10\\ 
+3 & 3 & 6 & 9 & 12 & 15\\
+\end{block}
+\end{blockarray}$
+ \caption{\code{MatrixTable(5,3,1)}, where $width = 5$, $height = 3$, and \emph{scaling} $factor =1$}
+\end{figure}
+ 
+ 
+ \begin{figure}
+\centering
+$\begin{blockarray}{cccccc}
+  & 1 & 2 & 3 & 4 & 5 \\ 
+\begin{block}{c[ccccc]}
+1 & 2 & 4 & 6 & 8 & 10 \\ 
+2 & 4 & 8 & 12 & 16 & 20\\ 
+3 & 6 & 12 & 18 & 24 & 30 \\
+\end{block}
+\end{blockarray}$
+ \caption{\code{MatrixTable(5,3,2)}, where $width = 5$, $height = 3$, and \emph{scaling} $factor =2$}
+\end{figure}
+
+%\[
+%\begin{matrix}
+% s & 1 & 2 & 3 & 4 & 5 \\ 
+%1 & 1 & 2 & 3 & 4 & 5 \\ 
+%2 & 2 & 4 & 6 & 8 & 10\\ 
+%3 & 3 & 6 & 9 & 12 & 15
+%\end{matrix}
+%\]
+%
+%\begin{matrix}
+%  & 1 & 2 & 3 & 4 & 5 \\ 
+%1 & 2 & 4 & 6 & 8 & 10 \\ 
+%2 & 4 & 8 & 12 & 16 & 20\\ 
+%3 & 6 & 12 & 18 & 24 & 30
+%\end{matrix}
+
+
+\end{document}
