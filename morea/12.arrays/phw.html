@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> PWOD9 | CSCI 151 </title>
+  <title> PHW12 | CSCI 151 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -90,33 +90,81 @@
 
 
 <div class="container">
-  <h1 id="pwod9-recursive-sort-debugging">PWOD9: Recursive Sort Debugging</h1>
+  <h1 id="phw12-multiplicationtable">PHW12: MultiplicationTable</h1>
 
-<!--In this PWOD we will see how to refactor an existing Java project so that code changes are easier to make. We began this PWOD in class.-->
+<p>In this PHW, you will practice working with two-dimensional arrays in main and as a reusable class.</p>
 
-<p><span class="h4">
-  <span style="padding: 2px" class="label label-success">Rx: &lt;15 min</span>
+<!--<span class="h4">
+  <span style="padding: 2px" class="label label-success">Rx: <15 min</span>
   <span style="padding: 2px" class="label label-info">Av: 15-30 min</span>
   <span style="padding: 2px" class="label label-warning">Sd: 30-45 min</span>
   <span style="padding: 2px" class="label label-danger">DNF: 45+ min</span>
-</span></p>
+</span>
+-->
 
-<h2 id="instructions">Instructions</h2>
+<h2 id="part-1-understanding-the-problem-through-main">Part 1: Understanding the Problem through <code>main</code></h2>
+
+<p>We will be creating a 2-dimensional array that will take a width, height, &amp; scaling factor and</p>
+
+<p><img src="fig1.png" width="300" /> <img src="fig2.png" width="300" /></p>
+
+<h3 id="instructions">Instructions</h3>
 
 <ul>
-  <li>If you haven’t been following along in class, download the <a href="SortingB.zip">SortingB.zip</a> and import it into your workspace.</li>
-  <li>In class we used the debugger to understand <code>IterativeSorter</code>. There are 4 bugs in <code>RecursiveSorter</code>; it should give the same output as <code>IterativeSorter</code>, but it doesn’t. Step through the code to identify and fix the 4 bugs. Note down the files &amp; line numbers so you can check your solution.</li>
+  <li>Create a class with a <code>main</code> method to learn the Java syntax of this particular problem.</li>
+  <li>Create a 3 x 5 two-dimensional array of integers like the ones in the figures above.</li>
+  <li>Use a nested for loop to initialize the array by multiplying the row and the column as in Figure 1.</li>
+  <li>Use another nested for loop to print the array to make sure you have the correct output.</li>
+  <li>Add a scaling factor variable at the top of your main. Multiply every value in your multiplication table by this value. If you set the scaling factor to be 2, your code should output something like Figure 2 when run.</li>
 </ul>
 
-<h2 id="demonstration">Demonstration</h2>
+<p>Now that you understand what you’re implementing, you’re ready to try rewriting it in a reusable, object-oriented way.</p>
 
-<!--*Coming soon...*-->
+<h3 id="demonstration">Demonstration</h3>
 
-<p>Once you’ve finished doing the WOD a single time, watch me do it:</p>
+<p><em>Coming soon…</em></p>
+
+<h2 id="part-2-make-it-reusuable-with-an-oo-multiplicationtable-class">Part 2: Make it reusuable with an OO <code>MultiplicationTable</code> class</h2>
+
+<h3 id="instructions-1">Instructions</h3>
+
+<ul>
+  <li>Create a class <code>MultiplicationTable</code> with 2 fields: a two-dimensional integer array &amp; a scaling factor</li>
+  <li>Create a constructor that takes 3 parameters: width, height, &amp; scaling factor
+    <ul>
+      <li>Initialize <code>array[0][0] = scaling factor</code></li>
+      <li>Initialize <code>array[w-1][h-1] = scaling factor * width * height</code></li>
+      <li>Initialize all the remaining values in between as appropriate</li>
+    </ul>
+  </li>
+  <li>Create a <code>print</code> method to print out the table</li>
+  <li>Create a <code>lookup</code> method that takes two indexes (of the ranges 1 to width and 1 to height) and returns the appropriate value (or 0 otherwise)</li>
+  <li>Test your methods in main.</li>
+  <li>
+    <p><em>Optional:</em> Want all your numbers to line up in nice columns?</p>
+
+    <pre><code>String format = "%10d"; // padd number to take 10 spaces total
+int value = 1250;
+System.out.format(format, value);
+</code></pre>
+  </li>
+  <li>
+    <p><em>Optional:</em> Want all your numbers to line up relative to the length of the largest value? Figure out the length of your longest number:</p>
+
+    <pre><code>String.valueOf(biggest).length();
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="demonstration-1">Demonstration</h3>
+
+<p><em>Coming soon…</em></p>
+
+<!--Once you've finished doing the WOD a single time, watch me do it:
 
 <div class="video-container">
-  <iframe src="http://www.youtube.com/embed/Gnc0hJ2mPs4" frameborder="0" allowfullscreen=""></iframe>
-</div>
+  <iframe  src="http://www.youtube.com/embed/Gnc0hJ2mPs4" frameborder="0" allowfullscreen></iframe>
+</div>-->
 
 
 </div>

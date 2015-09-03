@@ -111,7 +111,7 @@
       <li>A <strong>constructor</strong> that takes the customer’s name, address, and account number, and initializes the balance to 0.</li>
       <li>Getter and setter methods for the name and address fields. <strong><em>No</em></strong> setter for the balance or account number (can you guess why?), just getters.</li>
       <li>A <code>deposit</code> and a <code>debit</code> method. The method signatures are similar in that they have <strong>no return value</strong> and <strong>one parameter</strong>.</li>
-      <li>A <code>print</code> method that prints out the account information, including the current balance. Make sure to use proper formatting so both dollars and cents are displayed correctly. This method should take no parameters and return nothing. (<em>Hint:</em> check out Java’s <a href="http://docs.oracle.com/javase/8/docs/api/java/text/NumberFormat.html">NumberFormat</a>.<a href="http://docs.oracle.com/javase/8/docs/api/java/text/NumberFormat.html#getCurrencyInstance--">getCurrencyInstance()</a> and this <a href="http://stackoverflow.com/a/2379425">usage example</a>.) </li>
+      <li>A <code>print</code> method that prints out the account information, including the current balance. Make sure to use proper formatting so both dollars and cents are displayed correctly. This method should take no parameters and return nothing. (<em>Hint:</em> check out Java’s <a href="http://docs.oracle.com/javase/8/docs/api/java/text/NumberFormat.html">NumberFormat</a>.<a href="http://docs.oracle.com/javase/8/docs/api/java/text/NumberFormat.html#getCurrencyInstance--">getCurrencyInstance()</a> and this <a href="http://stackoverflow.com/a/2379425">usage example</a>.)</li>
     </ul>
   </li>
   <li>Test your BankAccount class by writing a <code>main</code> method that creates a new, empty <code>BankAccount</code> stored in a local variable, <code>myBankAccount</code>.
@@ -121,7 +121,7 @@
     </ul>
   </li>
   <li>What happens if you try to deposit negative amounts or debit more than the balance? Test each of these cases in main. What do you <em>think</em> should happen?</li>
-  <li>Modify the <code>debit</code> &amp; <code>deposit</code> methods so that negative amounts have no effect. For example, myBankAccount.deposit(5) will add $5, but myBankAccount.deposit(-5) will do nothing. </li>
+  <li>Modify the <code>debit</code> &amp; <code>deposit</code> methods so that negative amounts have no effect. For example, myBankAccount.deposit(5) will add $5, but myBankAccount.deposit(-5) will do nothing.</li>
   <li>Modify the <code>debit</code> method to make sure there are sufficient funds before deducting from the balance. Print an error message if there are insufficient funds.</li>
   <li>Now let’s create a <code>Bank</code> class that can store multiple <code>BankAccount</code> objects:
     <ul>
@@ -129,7 +129,7 @@
       <li>A <strong>constructor</strong> that takes the Bank’s name and initializes the list of accounts.</li>
       <li>Get and set methods for the name, and a getter for the account list.</li>
       <li>An <code>add</code> method that takes an account as a parameter and adds it to the list of accounts.</li>
-      <li>A <code>print</code> method that prints out the Bank’s name followed by an overview of all the accounts (i.e., by calling <code>print</code> on each account). </li>
+      <li>A <code>print</code> method that prints out the Bank’s name followed by an overview of all the accounts (i.e., by calling <code>print</code> on each account).</li>
     </ul>
   </li>
   <li>Test your Bank class by writing a <code>main</code> method that creates a new <code>Bank</code>. Add 2-3 accounts to this bank and make sure they have balances &gt; 0. Display the Bank information by calling <code>print</code>.</li>
@@ -177,7 +177,7 @@ have not achieved at least Av performance. If so, be sure to:</p>
 
     
     <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: cerulean)<br>
-       Last update on: <span>2015-08-06 15:42:23 -0400</span></p>
+       Last update on: <span>2015-09-03 16:15:25 -0400</span></p>
     <p style="margin: 0">
       13 modules
       
@@ -187,7 +187,7 @@ have not achieved at least Av performance. If so, be sure to:</p>
         | 43 readings
       
       
-        | 17 experiences
+        | 18 experiences
       
       
         | 2 assessments
