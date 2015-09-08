@@ -33,7 +33,9 @@ Now that you understand what you're implementing, you're ready to try rewriting 
 
 ### Demonstration
 
-*Coming soon...*
+Once you've finished doing the practice HW a single time, watch me do it:
+
+{% include youtube.html id="b219OsTAkiA" %}
 
 
 ## Part 2: Make it reusuable with an OO `MultiplicationTable` class
