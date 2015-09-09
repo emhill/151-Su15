@@ -62,9 +62,7 @@ Once you've finished doing the practice HW a single time, watch me do it:
 
 ### Demonstration
 
-*Coming soon...*
+Once you've finished doing the practice HW a single time, watch me do it:
 
-<!--Once you've finished doing the WOD a single time, watch me do it:
-
-{% include youtube.html id="Gnc0hJ2mPs4" %}-->
+{% include youtube.html id="vIQmByduy4g" %}
 
